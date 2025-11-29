@@ -21,8 +21,8 @@ import torch
 from PIL import Image
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import AutoencoderKLCogVideoX, ConsisIDPipeline, ConsisIDTransformer3DModel, DDIMScheduler
-from diffusers.utils import load_image
+from diffusers_udated import AutoencoderKLCogVideoX, ConsisIDPipeline, ConsisIDTransformer3DModel, DDIMScheduler
+from diffusers_udated.utils import load_image
 
 from ...testing_utils import (
     backend_empty_cache,

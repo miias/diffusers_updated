@@ -8,7 +8,7 @@ on:
       - v*-release
       - v*-patch
     paths:
-      - "src/diffusers/**.py"
+      - "src/diffusers_updated/**.py"
       - "examples/**"
       - "docs/**"
 

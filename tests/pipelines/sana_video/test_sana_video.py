@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from transformers import Gemma2Config, Gemma2Model, GemmaTokenizer
 
-from diffusers import AutoencoderKLWan, DPMSolverMultistepScheduler, SanaVideoPipeline, SanaVideoTransformer3DModel
+from diffusers_udated import AutoencoderKLWan, DPMSolverMultistepScheduler, SanaVideoPipeline, SanaVideoTransformer3DModel
 
 from ...testing_utils import (
     backend_empty_cache,

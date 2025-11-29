@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import SanaVideoTransformer3DModel
+from diffusers_udated import SanaVideoTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

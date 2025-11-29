@@ -4,7 +4,7 @@ import logging
 import torch
 from safetensors import safe_open
 
-from diffusers import AutoencoderKLHunyuanImage, AutoencoderKLHunyuanImageRefiner, HunyuanImageTransformer2DModel
+from diffusers_udated import AutoencoderKLHunyuanImage, AutoencoderKLHunyuanImageRefiner, HunyuanImageTransformer2DModel
 
 
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name

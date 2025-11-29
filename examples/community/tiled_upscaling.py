@@ -21,9 +21,9 @@ import torch
 from PIL import Image
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion_upscale import StableDiffusionUpscalePipeline
-from diffusers.schedulers import DDIMScheduler, DDPMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.stable_diffusion.pipeline_stable_diffusion_upscale import StableDiffusionUpscalePipeline
+from diffusers_udated.schedulers import DDIMScheduler, DDPMScheduler, LMSDiscreteScheduler, PNDMScheduler
 
 
 def make_transparency_mask(size, overlap_pixels, remove_borders=[]):

@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import SkyReelsV2Transformer3DModel
+from diffusers_udated import SkyReelsV2Transformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

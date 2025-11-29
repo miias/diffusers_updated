@@ -5,7 +5,7 @@ import safetensors.torch
 from accelerate import init_empty_weights
 from huggingface_hub import hf_hub_download
 
-from diffusers.utils.import_utils import is_accelerate_available, is_transformers_available
+from diffusers_udated.utils.import_utils import is_accelerate_available, is_transformers_available
 
 
 if is_transformers_available():

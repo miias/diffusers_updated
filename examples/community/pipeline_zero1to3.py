@@ -25,17 +25,17 @@ from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
 # from ..pipeline_utils import DiffusionPipeline, StableDiffusionMixin
 # from . import StableDiffusionPipelineOutput
 # from .safety_checker import StableDiffusionSafetyChecker
-from diffusers import AutoencoderKL, DiffusionPipeline, StableDiffusionMixin, UNet2DConditionModel
-from diffusers.configuration_utils import ConfigMixin, FrozenDict
-from diffusers.models.modeling_utils import ModelMixin
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput, StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated import AutoencoderKL, DiffusionPipeline, StableDiffusionMixin, UNet2DConditionModel
+from diffusers_udated.configuration_utils import ConfigMixin, FrozenDict
+from diffusers_udated.models.modeling_utils import ModelMixin
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput, StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     deprecate,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

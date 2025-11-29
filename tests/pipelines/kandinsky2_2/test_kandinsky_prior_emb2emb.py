@@ -29,7 +29,7 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import KandinskyV22PriorEmb2EmbPipeline, PriorTransformer, UnCLIPScheduler
+from diffusers_udated import KandinskyV22PriorEmb2EmbPipeline, PriorTransformer, UnCLIPScheduler
 
 from ...testing_utils import (
     enable_full_determinism,

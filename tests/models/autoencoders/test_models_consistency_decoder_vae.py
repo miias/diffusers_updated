@@ -19,8 +19,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import ConsistencyDecoderVAE, StableDiffusionPipeline
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated import ConsistencyDecoderVAE, StableDiffusionPipeline
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

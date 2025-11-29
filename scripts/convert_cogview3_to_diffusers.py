@@ -31,9 +31,9 @@ import torch
 from accelerate import init_empty_weights
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers import AutoencoderKL, CogVideoXDDIMScheduler, CogView3PlusPipeline, CogView3PlusTransformer2DModel
-from diffusers.loaders.single_file_utils import convert_ldm_vae_checkpoint
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated import AutoencoderKL, CogVideoXDDIMScheduler, CogView3PlusPipeline, CogView3PlusTransformer2DModel
+from diffusers_udated.loaders.single_file_utils import convert_ldm_vae_checkpoint
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 
 CTX = init_empty_weights if is_accelerate_available() else nullcontext

@@ -11,12 +11,12 @@ from packaging import version
 from polygraphy.backend.onnx.loader import fold_constants
 from torch.onnx import export
 
-from diffusers import (
+from diffusers_udated import (
     ControlNetModel,
     StableDiffusionControlNetImg2ImgPipeline,
 )
-from diffusers.models.attention_processor import AttnProcessor
-from diffusers.pipelines.controlnet.pipeline_controlnet_sd_xl import StableDiffusionXLControlNetPipeline
+from diffusers_udated.models.attention_processor import AttnProcessor
+from diffusers_udated.pipelines.controlnet.pipeline_controlnet_sd_xl import StableDiffusionXLControlNetPipeline
 
 
 is_torch_less_than_1_11 = version.parse(version.parse(torch.__version__).base_version) < version.parse("1.11")

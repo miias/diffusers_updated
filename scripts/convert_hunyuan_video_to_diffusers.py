@@ -12,7 +12,7 @@ from transformers import (
     LlavaForConditionalGeneration,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLHunyuanVideo,
     FlowMatchEulerDiscreteScheduler,
     HunyuanVideoImageToVideoPipeline,

@@ -18,7 +18,7 @@ import unittest
 
 import numpy as np
 
-from diffusers import (
+from diffusers_udated import (
     DDIMScheduler,
     DPMSolverMultistepScheduler,
     EulerAncestralDiscreteScheduler,

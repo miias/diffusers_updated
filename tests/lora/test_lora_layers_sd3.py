@@ -20,14 +20,14 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, CLIPTextModelWithProjection, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     FlowMatchEulerDiscreteScheduler,
     SD3Transformer2DModel,
     StableDiffusion3Img2ImgPipeline,
     StableDiffusion3Pipeline,
 )
-from diffusers.utils import load_image
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated.utils import load_image
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 from ..testing_utils import (
     backend_empty_cache,

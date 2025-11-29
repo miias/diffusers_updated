@@ -43,24 +43,24 @@ from torch import nn
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 from transformers.modeling_attn_mask_utils import _create_4d_causal_attention_mask, _prepare_4d_attention_mask
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     IPAdapterMixin,
     StableDiffusionLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models import AutoencoderKL, ControlNetModel, ImageProjection, UNet2DConditionModel
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.models.modeling_utils import ModelMixin
-from diffusers.pipelines.controlnet.multicontrolnet import MultiControlNetModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion.pipeline_output import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.models import AutoencoderKL, ControlNetModel, ImageProjection, UNet2DConditionModel
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.models.modeling_utils import ModelMixin
+from diffusers_udated.pipelines.controlnet.multicontrolnet import MultiControlNetModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion.pipeline_output import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     deprecate,
     logging,
@@ -68,8 +68,8 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.constants import HF_MODULES_CACHE
-from diffusers.utils.torch_utils import is_compiled_module, is_torch_version, randn_tensor
+from diffusers_udated.utils.constants import HF_MODULES_CACHE
+from diffusers_udated.utils.torch_utils import is_compiled_module, is_torch_version, randn_tensor
 
 
 class Checker:

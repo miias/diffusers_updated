@@ -2,7 +2,7 @@ import torch
 import torchvision.transforms as T
 from controlnet_aux import HEDdetector
 
-from diffusers.utils import load_image
+from diffusers_udated.utils import load_image
 from examples.research_projects.pixart.controlnet_pixart_alpha import PixArtControlNetAdapterModel
 from examples.research_projects.pixart.pipeline_pixart_alpha_controlnet import PixArtAlphaControlnetPipeline
 

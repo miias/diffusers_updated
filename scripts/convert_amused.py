@@ -8,11 +8,11 @@ from muse import MaskGiTUViT, VQGANModel
 from muse import PipelineMuse as OldPipelineMuse
 from transformers import CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import VQModel
-from diffusers.models.attention_processor import AttnProcessor
-from diffusers.models.unets.uvit_2d import UVit2DModel
-from diffusers.pipelines.amused.pipeline_amused import AmusedPipeline
-from diffusers.schedulers import AmusedScheduler
+from diffusers_udated import VQModel
+from diffusers_udated.models.attention_processor import AttnProcessor
+from diffusers_udated.models.unets.uvit_2d import UVit2DModel
+from diffusers_udated.pipelines.amused.pipeline_amused import AmusedPipeline
+from diffusers_udated.schedulers import AmusedScheduler
 
 
 torch.backends.cuda.enable_flash_sdp(False)

@@ -16,8 +16,8 @@ from huggingface_hub import ModelCard, delete_repo
 from huggingface_hub.utils import is_jinja_available
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AsymmetricAutoencoderKL,
     AutoencoderKL,
     AutoencoderTiny,
@@ -32,23 +32,23 @@ from diffusers import (
     UNet2DConditionModel,
     apply_faster_cache,
 )
-from diffusers.hooks import apply_group_offloading
-from diffusers.hooks.faster_cache import FasterCacheBlockHook, FasterCacheDenoiserHook
-from diffusers.hooks.first_block_cache import FirstBlockCacheConfig
-from diffusers.hooks.pyramid_attention_broadcast import PyramidAttentionBroadcastHook
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import FluxIPAdapterMixin, IPAdapterMixin
-from diffusers.models.attention import AttentionModuleMixin
-from diffusers.models.attention_processor import AttnProcessor
-from diffusers.models.controlnets.controlnet_xs import UNetControlNetXSModel
-from diffusers.models.unets.unet_3d_condition import UNet3DConditionModel
-from diffusers.models.unets.unet_i2vgen_xl import I2VGenXLUNet
-from diffusers.models.unets.unet_motion_model import UNetMotionModel
-from diffusers.pipelines.pipeline_utils import StableDiffusionMixin
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import logging
-from diffusers.utils.import_utils import is_xformers_available
-from diffusers.utils.source_code_parsing_utils import ReturnNameVisitor
+from diffusers_udated.hooks import apply_group_offloading
+from diffusers_udated.hooks.faster_cache import FasterCacheBlockHook, FasterCacheDenoiserHook
+from diffusers_udated.hooks.first_block_cache import FirstBlockCacheConfig
+from diffusers_udated.hooks.pyramid_attention_broadcast import PyramidAttentionBroadcastHook
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import FluxIPAdapterMixin, IPAdapterMixin
+from diffusers_udated.models.attention import AttentionModuleMixin
+from diffusers_udated.models.attention_processor import AttnProcessor
+from diffusers_udated.models.controlnets.controlnet_xs import UNetControlNetXSModel
+from diffusers_udated.models.unets.unet_3d_condition import UNet3DConditionModel
+from diffusers_udated.models.unets.unet_i2vgen_xl import I2VGenXLUNet
+from diffusers_udated.models.unets.unet_motion_model import UNetMotionModel
+from diffusers_udated.pipelines.pipeline_utils import StableDiffusionMixin
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.source_code_parsing_utils import ReturnNameVisitor
 
 from ..models.autoencoders.vae import (
     get_asym_autoencoder_kl_config,
@@ -1023,7 +1023,7 @@ class PipelineKarrasSchedulerTesterMixin:
             if "KDPM2" in scheduler_enum.name:
                 inputs["num_inference_steps"] = num_inference_steps_for_strength_for_iterations
 
-            scheduler_cls = getattr(diffusers, scheduler_enum.name)
+            scheduler_cls = getattr(diffusers_udated, scheduler_enum.name)
             pipe.scheduler = scheduler_cls.from_config(pipe.scheduler.config)
             output = pipe(**inputs)[0]
             outputs.append(output)
@@ -1139,7 +1139,7 @@ class PipelineTesterMixin:
         backend_empty_cache(torch_device)
 
         # Skip tests for pipelines that inherit from DeprecatedPipelineMixin
-        from diffusers.pipelines.pipeline_utils import DeprecatedPipelineMixin
+        from diffusers_udated.pipelines.pipeline_utils import DeprecatedPipelineMixin
 
         if hasattr(self, "pipeline_class") and issubclass(self.pipeline_class, DeprecatedPipelineMixin):
             import pytest
@@ -1167,7 +1167,7 @@ class PipelineTesterMixin:
         output = pipe(**inputs)[0]
 
         logger = logging.get_logger("diffusers.pipelines.pipeline_utils")
-        logger.setLevel(diffusers.logging.INFO)
+        logger.setLevel(diffusers_udated.logging.INFO)
 
         with tempfile.TemporaryDirectory() as tmpdir:
             pipe.save_pretrained(tmpdir, safe_serialization=False)
@@ -1246,7 +1246,7 @@ class PipelineTesterMixin:
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # prepare batched inputs
         batched_inputs = []
@@ -1278,7 +1278,7 @@ class PipelineTesterMixin:
 
             batched_inputs.append(batched_input)
 
-        logger.setLevel(level=diffusers.logging.WARNING)
+        logger.setLevel(level=diffusers_udated.logging.WARNING)
         for batch_size, batched_input in zip(batch_sizes, batched_inputs):
             output = pipe(**batched_input)
             assert len(output[0]) == batch_size
@@ -1305,7 +1305,7 @@ class PipelineTesterMixin:
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}
@@ -2784,7 +2784,7 @@ class FasterCacheTesterMixin:
         )
 
     def test_faster_cache_state(self):
-        from diffusers.hooks.faster_cache import _FASTER_CACHE_BLOCK_HOOK, _FASTER_CACHE_DENOISER_HOOK
+        from diffusers_udated.hooks.faster_cache import _FASTER_CACHE_BLOCK_HOOK, _FASTER_CACHE_DENOISER_HOOK
 
         device = "cpu"  # ensure determinism for the device-dependent torch.Generator
         num_layers = 0

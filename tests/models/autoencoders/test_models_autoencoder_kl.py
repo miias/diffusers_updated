@@ -19,8 +19,8 @@ import unittest
 import torch
 from parameterized import parameterized
 
-from diffusers import AutoencoderKL
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated import AutoencoderKL
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

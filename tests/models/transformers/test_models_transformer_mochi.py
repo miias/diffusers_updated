@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import MochiTransformer3DModel
+from diffusers_udated import MochiTransformer3DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin

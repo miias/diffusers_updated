@@ -18,7 +18,7 @@ import unittest
 import pytest
 import torch
 
-from diffusers import UNet1DModel
+from diffusers_udated import UNet1DModel
 
 from ...testing_utils import (
     backend_manual_seed,

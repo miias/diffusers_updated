@@ -5,14 +5,14 @@ import numpy as np
 import PIL.Image
 import torch
 
-from diffusers import StableDiffusionControlNetPipeline
-from diffusers.models import ControlNetModel
-from diffusers.models.attention import BasicTransformerBlock
-from diffusers.models.unets.unet_2d_blocks import CrossAttnDownBlock2D, CrossAttnUpBlock2D, DownBlock2D, UpBlock2D
-from diffusers.pipelines.controlnet.multicontrolnet import MultiControlNetModel
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.utils import logging
-from diffusers.utils.torch_utils import is_compiled_module, randn_tensor
+from diffusers_udated import StableDiffusionControlNetPipeline
+from diffusers_udated.models import ControlNetModel
+from diffusers_udated.models.attention import BasicTransformerBlock
+from diffusers_udated.models.unets.unet_2d_blocks import CrossAttnDownBlock2D, CrossAttnUpBlock2D, DownBlock2D, UpBlock2D
+from diffusers_udated.pipelines.controlnet.multicontrolnet import MultiControlNetModel
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.torch_utils import is_compiled_module, randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

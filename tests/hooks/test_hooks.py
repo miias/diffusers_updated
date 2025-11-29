@@ -17,9 +17,9 @@ import unittest
 
 import torch
 
-from diffusers.hooks import HookRegistry, ModelHook
-from diffusers.training_utils import free_memory
-from diffusers.utils.logging import get_logger
+from diffusers_udated.hooks import HookRegistry, ModelHook
+from diffusers_udated.training_utils import free_memory
+from diffusers_udated.utils.logging import get_logger
 
 from ..testing_utils import CaptureLogger, torch_device
 

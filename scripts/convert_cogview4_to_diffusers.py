@@ -32,9 +32,9 @@ import torch
 from accelerate import init_empty_weights
 from transformers import GlmForCausalLM, PreTrainedTokenizerFast
 
-from diffusers import AutoencoderKL, CogView4Pipeline, CogView4Transformer2DModel, FlowMatchEulerDiscreteScheduler
-from diffusers.loaders.single_file_utils import convert_ldm_vae_checkpoint
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated import AutoencoderKL, CogView4Pipeline, CogView4Transformer2DModel, FlowMatchEulerDiscreteScheduler
+from diffusers_udated.loaders.single_file_utils import convert_ldm_vae_checkpoint
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 
 CTX = init_empty_weights if is_accelerate_available() else nullcontext

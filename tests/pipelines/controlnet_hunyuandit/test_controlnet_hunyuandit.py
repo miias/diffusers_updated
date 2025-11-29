@@ -20,15 +20,15 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, BertModel, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDPMScheduler,
     HunyuanDiT2DModel,
     HunyuanDiTControlNetPipeline,
 )
-from diffusers.models import HunyuanDiT2DControlNetModel, HunyuanDiT2DMultiControlNetModel
-from diffusers.utils import load_image
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.models import HunyuanDiT2DControlNetModel, HunyuanDiT2DMultiControlNetModel
+from diffusers_udated.utils import load_image
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

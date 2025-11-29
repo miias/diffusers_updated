@@ -19,13 +19,13 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     EulerDiscreteScheduler,
     KolorsImg2ImgPipeline,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.kolors import ChatGLMModel, ChatGLMTokenizer
+from diffusers_udated.pipelines.kolors import ChatGLMModel, ChatGLMTokenizer
 
 from ...testing_utils import (
     enable_full_determinism,

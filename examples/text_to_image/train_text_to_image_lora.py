@@ -42,19 +42,19 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-import diffusers
-from diffusers import AutoencoderKL, DDPMScheduler, DiffusionPipeline, StableDiffusionPipeline, UNet2DConditionModel
-from diffusers.optimization import get_scheduler
-from diffusers.training_utils import cast_training_params, compute_snr
-from diffusers.utils import (
+import diffusers_udated
+from diffusers_udated import AutoencoderKL, DDPMScheduler, DiffusionPipeline, StableDiffusionPipeline, UNet2DConditionModel
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.training_utils import cast_training_params, compute_snr
+from diffusers_udated.utils import (
     check_min_version,
     convert_state_dict_to_diffusers,
     convert_unet_state_dict_to_peft,
     is_wandb_available,
 )
-from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_card
-from diffusers.utils.import_utils import is_xformers_available
-from diffusers.utils.torch_utils import is_compiled_module
+from diffusers_udated.utils.hub_utils import load_or_create_model_card, populate_model_card
+from diffusers_udated.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.torch_utils import is_compiled_module
 
 
 if is_wandb_available():
@@ -483,11 +483,11 @@ def main():
     if accelerator.is_local_main_process:
         datasets.utils.logging.set_verbosity_warning()
         transformers.utils.logging.set_verbosity_warning()
-        diffusers.utils.logging.set_verbosity_info()
+        diffusers_udated.utils.logging.set_verbosity_info()
     else:
         datasets.utils.logging.set_verbosity_error()
         transformers.utils.logging.set_verbosity_error()
-        diffusers.utils.logging.set_verbosity_error()
+        diffusers_udated.utils.logging.set_verbosity_error()
 
     # If passed along, set the training seed now.
     if args.seed is not None:

@@ -23,7 +23,7 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     StableDiffusionImg2ImgPipeline,
     StableDiffusionInpaintPipeline,
     StableDiffusionPipeline,
@@ -31,8 +31,8 @@ from diffusers import (
     StableDiffusionXLInpaintPipeline,
     StableDiffusionXLPipeline,
 )
-from diffusers.image_processor import IPAdapterMaskProcessor
-from diffusers.utils import load_image
+from diffusers_udated.image_processor import IPAdapterMaskProcessor
+from diffusers_udated.utils import load_image
 
 from ...testing_utils import (
     Expectations,

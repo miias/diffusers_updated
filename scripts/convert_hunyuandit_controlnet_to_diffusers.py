@@ -2,7 +2,7 @@ import argparse
 
 import torch
 
-from diffusers import HunyuanDiT2DControlNetModel
+from diffusers_udated import HunyuanDiT2DControlNetModel
 
 
 def main(args):

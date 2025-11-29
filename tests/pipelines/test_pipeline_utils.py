@@ -7,7 +7,7 @@ import torch
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AnimateDiffPipeline,
     AnimateDiffVideoToVideoPipeline,
     AutoencoderKL,
@@ -18,7 +18,7 @@ from diffusers import (
     StableDiffusionPipeline,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.pipeline_loading_utils import is_safetensors_compatible, variant_compatible_siblings
+from diffusers_udated.pipelines.pipeline_loading_utils import is_safetensors_compatible, variant_compatible_siblings
 
 from ..testing_utils import require_torch_accelerator, torch_device
 

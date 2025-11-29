@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -216,7 +216,7 @@ class StableDiffusionXLPipelineFastTests(
         assert np.abs(image_slice.flatten() - expected_slice).max() < 1e-2
 
     def test_stable_diffusion_ays(self):
-        from diffusers.schedulers import AysSchedules
+        from diffusers_udated.schedulers import AysSchedules
 
         timestep_schedule = AysSchedules["StableDiffusionXLTimesteps"]
         sigma_schedule = AysSchedules["StableDiffusionXLSigmas"]

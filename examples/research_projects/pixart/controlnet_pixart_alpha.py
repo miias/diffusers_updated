@@ -3,11 +3,11 @@ from typing import Any, Dict, Optional
 import torch
 from torch import nn
 
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.models import PixArtTransformer2DModel
-from diffusers.models.attention import BasicTransformerBlock
-from diffusers.models.modeling_outputs import Transformer2DModelOutput
-from diffusers.models.modeling_utils import ModelMixin
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.models import PixArtTransformer2DModel
+from diffusers_udated.models.attention import BasicTransformerBlock
+from diffusers_udated.models.modeling_outputs import Transformer2DModelOutput
+from diffusers_udated.models.modeling_utils import ModelMixin
 
 
 class PixArtControlNetAdapterBlock(nn.Module):

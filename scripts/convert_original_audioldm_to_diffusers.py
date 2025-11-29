@@ -27,7 +27,7 @@ from transformers import (
     SpeechT5HifiGanConfig,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AudioLDMPipeline,
     AutoencoderKL,
     DDIMScheduler,

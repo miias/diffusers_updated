@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import EulerDiscreteScheduler
+from diffusers_udated import EulerDiscreteScheduler
 
 from ..testing_utils import torch_device
 from .test_schedulers import SchedulerCommonTest

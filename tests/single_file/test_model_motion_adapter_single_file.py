@@ -14,7 +14,7 @@
 # limitations under the License.
 
 
-from diffusers import (
+from diffusers_udated import (
     MotionAdapter,
 )
 

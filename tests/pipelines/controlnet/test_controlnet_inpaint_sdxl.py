@@ -29,14 +29,14 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     ControlNetModel,
     EulerDiscreteScheduler,
     StableDiffusionXLControlNetInpaintPipeline,
     UNet2DConditionModel,
 )
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     enable_full_determinism,

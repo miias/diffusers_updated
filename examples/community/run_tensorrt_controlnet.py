@@ -15,17 +15,17 @@ from PIL import Image
 from pycuda.tools import make_default_context
 from transformers import CLIPTokenizer
 
-from diffusers import OnnxRuntimeModel, StableDiffusionImg2ImgPipeline, UniPCMultistepScheduler
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated import OnnxRuntimeModel, StableDiffusionImg2ImgPipeline, UniPCMultistepScheduler
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     deprecate,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 # Initialize CUDA

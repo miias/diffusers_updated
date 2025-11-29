@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AnimateDiffPAGPipeline,
     AnimateDiffPipeline,
     AutoencoderKL,
@@ -17,8 +17,8 @@ from diffusers import (
     UNet2DConditionModel,
     UNetMotionModel,
 )
-from diffusers.models.attention import FreeNoiseTransformerBlock
-from diffusers.utils import is_xformers_available
+from diffusers_udated.models.attention import FreeNoiseTransformerBlock
+from diffusers_udated.utils import is_xformers_available
 
 from ...testing_utils import require_accelerator, torch_device
 from ..pipeline_params import TEXT_TO_IMAGE_BATCH_PARAMS, TEXT_TO_IMAGE_PARAMS

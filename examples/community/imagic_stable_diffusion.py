@@ -18,13 +18,13 @@ from packaging import version
 from tqdm.auto import tqdm
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
-from diffusers import DiffusionPipeline
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.pipeline_utils import StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
-from diffusers.utils import logging
+from diffusers_udated import DiffusionPipeline
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.pipeline_utils import StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_udated.utils import logging
 
 
 if version.parse(version.parse(PIL.__version__).base_version) >= version.parse("9.1.0"):

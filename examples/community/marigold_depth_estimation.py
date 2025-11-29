@@ -32,14 +32,14 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DiffusionPipeline,
     LCMScheduler,
     UNet2DConditionModel,
 )
-from diffusers.utils import BaseOutput, check_min_version
+from diffusers_udated.utils import BaseOutput, check_min_version
 
 
 # Will error if the minimal version of diffusers is not installed. Remove at your own risks.

@@ -22,9 +22,9 @@ import pytest
 import torch
 from transformers import XLMRobertaTokenizerFast
 
-from diffusers import DDIMScheduler, KandinskyPipeline, KandinskyPriorPipeline, UNet2DConditionModel, VQModel
-from diffusers.pipelines.kandinsky.text_encoder import MCLIPConfig, MultilingualCLIP
-from diffusers.utils import is_transformers_version
+from diffusers_udated import DDIMScheduler, KandinskyPipeline, KandinskyPriorPipeline, UNet2DConditionModel, VQModel
+from diffusers_udated.pipelines.kandinsky.text_encoder import MCLIPConfig, MultilingualCLIP
+from diffusers_udated.utils import is_transformers_version
 
 from ...testing_utils import (
     backend_empty_cache,

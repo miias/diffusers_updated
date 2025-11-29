@@ -19,8 +19,8 @@ import numpy as np
 import torch
 from transformers import Gemma2Config, Gemma2Model, GemmaTokenizer
 
-from diffusers import AutoencoderDC, SanaSprintImg2ImgPipeline, SanaTransformer2DModel, SCMScheduler
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated import AutoencoderDC, SanaSprintImg2ImgPipeline, SanaTransformer2DModel, SCMScheduler
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import IS_GITHUB_ACTIONS, enable_full_determinism, torch_device
 from ..pipeline_params import (

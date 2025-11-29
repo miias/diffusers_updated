@@ -25,15 +25,15 @@ from huggingface_hub import snapshot_download
 from parameterized import parameterized
 from pytest import mark
 
-from diffusers import UNet2DConditionModel
-from diffusers.models.attention_processor import (
+from diffusers_udated import UNet2DConditionModel
+from diffusers_udated.models.attention_processor import (
     CustomDiffusionAttnProcessor,
     IPAdapterAttnProcessor,
     IPAdapterAttnProcessor2_0,
 )
-from diffusers.models.embeddings import ImageProjection, IPAdapterFaceIDImageProjection, IPAdapterPlusImageProjection
-from diffusers.utils import logging
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated.models.embeddings import ImageProjection, IPAdapterFaceIDImageProjection, IPAdapterPlusImageProjection
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

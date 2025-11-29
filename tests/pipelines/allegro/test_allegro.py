@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, T5Config, T5EncoderModel
 
-from diffusers import AllegroPipeline, AllegroTransformer3DModel, AutoencoderKLAllegro, DDIMScheduler
+from diffusers_udated import AllegroPipeline, AllegroTransformer3DModel, AutoencoderKLAllegro, DDIMScheduler
 
 from ...testing_utils import (
     backend_empty_cache,

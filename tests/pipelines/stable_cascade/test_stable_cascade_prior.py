@@ -21,10 +21,10 @@ import pytest
 import torch
 from transformers import CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import DDPMWuerstchenScheduler, StableCascadePriorPipeline
-from diffusers.models import StableCascadeUNet
-from diffusers.utils import is_transformers_version
-from diffusers.utils.import_utils import is_peft_available
+from diffusers_udated import DDPMWuerstchenScheduler, StableCascadePriorPipeline
+from diffusers_udated.models import StableCascadeUNet
+from diffusers_udated.utils import is_transformers_version
+from diffusers_udated.utils.import_utils import is_peft_available
 
 from ...testing_utils import (
     backend_empty_cache,

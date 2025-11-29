@@ -11,15 +11,15 @@ from transformers import (
     T5TokenizerFast,
 )
 
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import FluxLoraLoaderMixin, FromSingleFileMixin, TextualInversionLoaderMixin
-from diffusers.models.autoencoders import AutoencoderKL
-from diffusers.models.controlnets.controlnet_flux import FluxControlNetModel, FluxMultiControlNetModel
-from diffusers.models.transformers import FluxTransformer2DModel
-from diffusers.pipelines.flux.pipeline_output import FluxPipelineOutput
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.schedulers import FlowMatchEulerDiscreteScheduler
-from diffusers.utils import (
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import FluxLoraLoaderMixin, FromSingleFileMixin, TextualInversionLoaderMixin
+from diffusers_udated.models.autoencoders import AutoencoderKL
+from diffusers_udated.models.controlnets.controlnet_flux import FluxControlNetModel, FluxMultiControlNetModel
+from diffusers_udated.models.transformers import FluxTransformer2DModel
+from diffusers_udated.pipelines.flux.pipeline_output import FluxPipelineOutput
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.schedulers import FlowMatchEulerDiscreteScheduler
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     is_torch_xla_available,
     logging,
@@ -27,7 +27,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

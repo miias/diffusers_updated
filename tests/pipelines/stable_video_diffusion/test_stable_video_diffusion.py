@@ -11,15 +11,15 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AutoencoderKLTemporalDecoder,
     EulerDiscreteScheduler,
     StableVideoDiffusionPipeline,
     UNetSpatioTemporalConditionModel,
 )
-from diffusers.utils import load_image, logging
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated.utils import load_image, logging
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     CaptureLogger,
@@ -171,7 +171,7 @@ class StableVideoDiffusionPipelineFastTests(PipelineTesterMixin, unittest.TestCa
         inputs["generator"] = torch.Generator("cpu").manual_seed(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}
@@ -351,7 +351,7 @@ class StableVideoDiffusionPipelineFastTests(PipelineTesterMixin, unittest.TestCa
         output = pipe(**inputs).frames[0]
 
         logger = logging.get_logger("diffusers.pipelines.pipeline_utils")
-        logger.setLevel(diffusers.logging.INFO)
+        logger.setLevel(diffusers_udated.logging.INFO)
 
         with tempfile.TemporaryDirectory() as tmpdir:
             pipe.save_pretrained(tmpdir, safe_serialization=False)

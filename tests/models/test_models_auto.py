@@ -3,7 +3,7 @@ from unittest.mock import patch
 
 from transformers import CLIPTextModel, LongformerModel
 
-from diffusers.models import AutoModel, UNet2DConditionModel
+from diffusers_udated.models import AutoModel, UNet2DConditionModel
 
 
 class TestAutoModel(unittest.TestCase):

@@ -19,9 +19,9 @@ from typing import Callable, List, Optional, Union
 import torch
 from k_diffusion.external import CompVisDenoiser, CompVisVDenoiser
 
-from diffusers import DiffusionPipeline, LMSDiscreteScheduler, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.utils import logging
+from diffusers_udated import DiffusionPipeline, LMSDiscreteScheduler, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.utils import logging
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

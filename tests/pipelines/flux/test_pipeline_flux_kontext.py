@@ -5,7 +5,7 @@ import PIL.Image
 import torch
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FasterCacheConfig,
     FlowMatchEulerDiscreteScheduler,

@@ -20,7 +20,7 @@ import re
 
 # All paths are set with the intent you should run this script from the root of the repo with the command
 # python utils/check_dummies.py
-PATH_TO_DIFFUSERS = "src/diffusers"
+PATH_TO_DIFFUSERS = "src/diffusers_updated"
 
 # Matches is_xxx_available()
 _re_backend = re.compile(r"is\_([a-z_]*)_available\(\)")

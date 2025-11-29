@@ -19,8 +19,8 @@ import unittest
 
 import torch
 
-from diffusers import UNet2DModel
-from diffusers.utils import logging
+from diffusers_udated import UNet2DModel
+from diffusers_udated.utils import logging
 
 from ...testing_utils import (
     backend_empty_cache,

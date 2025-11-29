@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import LMSDiscreteScheduler
+from diffusers_udated import LMSDiscreteScheduler
 
 from ..testing_utils import torch_device
 from .test_schedulers import SchedulerCommonTest

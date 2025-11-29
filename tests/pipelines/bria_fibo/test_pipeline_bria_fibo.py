@@ -19,12 +19,12 @@ import torch
 from transformers import AutoTokenizer
 from transformers.models.smollm3.modeling_smollm3 import SmolLM3Config, SmolLM3ForCausalLM
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     BriaFiboPipeline,
     FlowMatchEulerDiscreteScheduler,
 )
-from diffusers.models.transformers.transformer_bria_fibo import BriaFiboTransformer2DModel
+from diffusers_udated.models.transformers.transformer_bria_fibo import BriaFiboTransformer2DModel
 from tests.pipelines.test_pipelines_common import PipelineTesterMixin
 
 from ...testing_utils import (

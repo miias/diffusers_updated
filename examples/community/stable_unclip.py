@@ -5,11 +5,11 @@ import torch
 from transformers import CLIPTextModelWithProjection, CLIPTokenizer
 from transformers.models.clip.modeling_clip import CLIPTextModelOutput
 
-from diffusers.models import PriorTransformer
-from diffusers.pipelines import DiffusionPipeline, StableDiffusionImageVariationPipeline
-from diffusers.schedulers import UnCLIPScheduler
-from diffusers.utils import logging
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.models import PriorTransformer
+from diffusers_udated.pipelines import DiffusionPipeline, StableDiffusionImageVariationPipeline
+from diffusers_udated.schedulers import UnCLIPScheduler
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

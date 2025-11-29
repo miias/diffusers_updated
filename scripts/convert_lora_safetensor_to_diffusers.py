@@ -20,7 +20,7 @@ import argparse
 import torch
 from safetensors.torch import load_file
 
-from diffusers import StableDiffusionPipeline
+from diffusers_udated import StableDiffusionPipeline
 
 
 def convert(base_model_path, checkpoint_path, LORA_PREFIX_UNET, LORA_PREFIX_TEXT_ENCODER, alpha):

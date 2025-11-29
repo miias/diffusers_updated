@@ -29,7 +29,7 @@ from transformers import (
     SiglipVisionModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLHunyuanVideo,
     FasterCacheConfig,
     FlowMatchEulerDiscreteScheduler,

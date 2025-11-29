@@ -11,7 +11,7 @@ import torch_xla.distributed.xla_multiprocessing as xmp
 import torch_xla.runtime as xr
 from torch_xla.experimental.custom_kernel import FlashAttention
 
-from diffusers import FluxPipeline
+from diffusers_udated import FluxPipeline
 
 
 logger = structlog.get_logger()

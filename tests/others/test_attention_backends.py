@@ -28,8 +28,8 @@ import torch
 pytestmark = pytest.mark.skipif(
     os.getenv("RUN_ATTENTION_BACKEND_TESTS", "false") == "false", reason="Feature not mature enough."
 )
-from diffusers import FluxPipeline  # noqa: E402
-from diffusers.utils import is_torch_version  # noqa: E402
+from diffusers_udated import FluxPipeline  # noqa: E402
+from diffusers_udated.utils import is_torch_version  # noqa: E402
 
 
 # fmt: off

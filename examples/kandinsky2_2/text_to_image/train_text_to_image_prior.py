@@ -40,11 +40,11 @@ from tqdm import tqdm
 from transformers import CLIPImageProcessor, CLIPTextModelWithProjection, CLIPTokenizer, CLIPVisionModelWithProjection
 from transformers.utils import ContextManagers
 
-import diffusers
-from diffusers import AutoPipelineForText2Image, DDPMScheduler, PriorTransformer
-from diffusers.optimization import get_scheduler
-from diffusers.training_utils import EMAModel, compute_snr
-from diffusers.utils import check_min_version, is_wandb_available, make_image_grid
+import diffusers_udated
+from diffusers_udated import AutoPipelineForText2Image, DDPMScheduler, PriorTransformer
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.training_utils import EMAModel, compute_snr
+from diffusers_udated.utils import check_min_version, is_wandb_available, make_image_grid
 
 
 if is_wandb_available():
@@ -474,11 +474,11 @@ def main():
     if accelerator.is_local_main_process:
         datasets.utils.logging.set_verbosity_warning()
         transformers.utils.logging.set_verbosity_warning()
-        diffusers.utils.logging.set_verbosity_info()
+        diffusers_udated.utils.logging.set_verbosity_info()
     else:
         datasets.utils.logging.set_verbosity_error()
         transformers.utils.logging.set_verbosity_error()
-        diffusers.utils.logging.set_verbosity_error()
+        diffusers_udated.utils.logging.set_verbosity_error()
 
     # If passed along, set the training seed now.
     if args.seed is not None:

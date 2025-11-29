@@ -21,16 +21,16 @@ from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import torch
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.loaders import CogVideoXLoraLoaderMixin
-from diffusers.models import AutoencoderKLCogVideoX, CogVideoXTransformer3DModel
-from diffusers.models.embeddings import get_3d_rotary_pos_embed
-from diffusers.pipelines.cogvideo.pipeline_output import CogVideoXPipelineOutput
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.schedulers import CogVideoXDDIMScheduler, CogVideoXDPMScheduler
-from diffusers.utils import is_torch_xla_available, logging, replace_example_docstring
-from diffusers.utils.torch_utils import randn_tensor
-from diffusers.video_processor import VideoProcessor
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.loaders import CogVideoXLoraLoaderMixin
+from diffusers_udated.models import AutoencoderKLCogVideoX, CogVideoXTransformer3DModel
+from diffusers_udated.models.embeddings import get_3d_rotary_pos_embed
+from diffusers_udated.pipelines.cogvideo.pipeline_output import CogVideoXPipelineOutput
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.schedulers import CogVideoXDDIMScheduler, CogVideoXDPMScheduler
+from diffusers_udated.utils import is_torch_xla_available, logging, replace_example_docstring
+from diffusers_udated.utils.torch_utils import randn_tensor
+from diffusers_udated.video_processor import VideoProcessor
 
 
 if is_torch_xla_available():

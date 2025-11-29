@@ -20,7 +20,7 @@ import torch
 from PIL import Image
 from transformers import Qwen2_5_VLConfig, Qwen2_5_VLForConditionalGeneration, Qwen2Tokenizer, Qwen2VLProcessor
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLQwenImage,
     FlowMatchEulerDiscreteScheduler,
     QwenImageEditPlusPipeline,

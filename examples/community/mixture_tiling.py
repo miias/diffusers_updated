@@ -6,11 +6,11 @@ from typing import List, Optional, Tuple, Union
 import torch
 from tqdm.auto import tqdm
 
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
-from diffusers.utils import logging
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_udated.utils import logging
 
 
 try:

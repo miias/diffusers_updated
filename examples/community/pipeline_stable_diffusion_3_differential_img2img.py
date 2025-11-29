@@ -23,14 +23,14 @@ from transformers import (
     T5TokenizerFast,
 )
 
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.models.autoencoders import AutoencoderKL
-from diffusers.models.transformers import SD3Transformer2DModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion_3.pipeline_output import StableDiffusion3PipelineOutput
-from diffusers.schedulers import FlowMatchEulerDiscreteScheduler
-from diffusers.utils import is_torch_xla_available, logging, replace_example_docstring
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.models.autoencoders import AutoencoderKL
+from diffusers_udated.models.transformers import SD3Transformer2DModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion_3.pipeline_output import StableDiffusion3PipelineOutput
+from diffusers_udated.schedulers import FlowMatchEulerDiscreteScheduler
+from diffusers_udated.utils import is_torch_xla_available, logging, replace_example_docstring
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

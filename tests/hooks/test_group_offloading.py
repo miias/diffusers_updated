@@ -19,11 +19,11 @@ import unittest
 import torch
 from parameterized import parameterized
 
-from diffusers.hooks import HookRegistry, ModelHook
-from diffusers.models import ModelMixin
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.utils import get_logger
-from diffusers.utils.import_utils import compare_versions
+from diffusers_udated.hooks import HookRegistry, ModelHook
+from diffusers_udated.models import ModelMixin
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.utils import get_logger
+from diffusers_udated.utils.import_utils import compare_versions
 
 from ..testing_utils import (
     backend_empty_cache,

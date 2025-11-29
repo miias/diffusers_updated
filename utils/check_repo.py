@@ -22,13 +22,13 @@ from collections import OrderedDict
 from difflib import get_close_matches
 from pathlib import Path
 
-from diffusers.models.auto import get_values
-from diffusers.utils import ENV_VARS_TRUE_VALUES, is_flax_available, is_torch_available
+from diffusers_udated.models.auto import get_values
+from diffusers_udated.utils import ENV_VARS_TRUE_VALUES, is_flax_available, is_torch_available
 
 
 # All paths are set with the intent you should run this script from the root of the repo with the command
 # python utils/check_repo.py
-PATH_TO_DIFFUSERS = "src/diffusers"
+PATH_TO_DIFFUSERS = "src/diffusers_updated"
 PATH_TO_TESTS = "tests"
 PATH_TO_DOC = "docs/source/en"
 

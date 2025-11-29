@@ -18,7 +18,7 @@ import unittest
 import pytest
 import torch
 
-from diffusers import QwenImageTransformer2DModel
+from diffusers_udated import QwenImageTransformer2DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin, TorchCompileTesterMixin

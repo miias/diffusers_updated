@@ -21,7 +21,7 @@ import numpy as np
 import torch
 from PIL import Image
 
-from diffusers import (
+from diffusers_udated import (
     DDIMScheduler,
     KandinskyV22ControlnetImg2ImgPipeline,
     KandinskyV22PriorEmb2EmbPipeline,

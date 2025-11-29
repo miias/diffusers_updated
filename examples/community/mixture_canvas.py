@@ -11,10 +11,10 @@ from torchvision.transforms.functional import resize
 from tqdm.auto import tqdm
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
 
 
 def preprocess_image(image):

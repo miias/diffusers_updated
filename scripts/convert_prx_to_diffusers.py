@@ -13,8 +13,8 @@ from typing import Dict, Tuple
 import torch
 from safetensors.torch import save_file
 
-from diffusers.models.transformers.transformer_prx import PRXTransformer2DModel
-from diffusers.pipelines.prx import PRXPipeline
+from diffusers_udated.models.transformers.transformer_prx import PRXTransformer2DModel
+from diffusers_udated.pipelines.prx import PRXPipeline
 
 
 DEFAULT_RESOLUTION = 512
@@ -171,7 +171,7 @@ def create_scheduler_config(output_path: str, shift: float):
 
 def download_and_save_vae(vae_type: str, output_path: str):
     """Download and save VAE to local directory."""
-    from diffusers import AutoencoderDC, AutoencoderKL
+    from diffusers_udated import AutoencoderDC, AutoencoderKL
 
     vae_path = os.path.join(output_path, "vae")
     os.makedirs(vae_path, exist_ok=True)

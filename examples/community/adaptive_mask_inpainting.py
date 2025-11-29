@@ -35,14 +35,14 @@ from packaging import version
 from tqdm import tqdm
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
-from diffusers.configuration_utils import FrozenDict
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import FromSingleFileMixin, LoraLoaderMixin, TextualInversionLoaderMixin
-from diffusers.models import AsymmetricAutoencoderKL, AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.configuration_utils import FrozenDict
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import FromSingleFileMixin, LoraLoaderMixin, TextualInversionLoaderMixin
+from diffusers_udated.models import AsymmetricAutoencoderKL, AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     deprecate,
     is_accelerate_available,
     is_accelerate_version,

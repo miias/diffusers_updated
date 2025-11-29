@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from transformers import Qwen2Tokenizer, Qwen2VLForConditionalGeneration
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLMagvit,
     EasyAnimatePipeline,
     EasyAnimateTransformer3DModel,

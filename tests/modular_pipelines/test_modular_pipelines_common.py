@@ -5,10 +5,10 @@ from typing import Callable, Union
 import pytest
 import torch
 
-import diffusers
-from diffusers import ComponentsManager, ModularPipeline, ModularPipelineBlocks
-from diffusers.guiders import ClassifierFreeGuidance
-from diffusers.utils import logging
+import diffusers_udated
+from diffusers_udated import ComponentsManager, ModularPipeline, ModularPipelineBlocks
+from diffusers_udated.guiders import ClassifierFreeGuidance
+from diffusers_udated.utils import logging
 
 from ..testing_utils import backend_empty_cache, numpy_cosine_similarity_distance, require_accelerator, torch_device
 
@@ -131,7 +131,7 @@ class ModularPipelineTesterMixin:
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # prepare batched inputs
         batched_inputs = []
@@ -154,7 +154,7 @@ class ModularPipelineTesterMixin:
 
             batched_inputs.append(batched_input)
 
-        logger.setLevel(level=diffusers.logging.WARNING)
+        logger.setLevel(level=diffusers_udated.logging.WARNING)
         for batch_size, batched_input in zip(batch_sizes, batched_inputs):
             output = pipe(**batched_input, output="images")
             assert len(output) == batch_size, "Output is different from expected batch size"
@@ -172,7 +172,7 @@ class ModularPipelineTesterMixin:
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}

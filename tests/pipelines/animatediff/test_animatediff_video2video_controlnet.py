@@ -5,8 +5,8 @@ import torch
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AnimateDiffVideoToVideoControlNetPipeline,
     AutoencoderKL,
     ControlNetModel,
@@ -18,8 +18,8 @@ from diffusers import (
     UNet2DConditionModel,
     UNetMotionModel,
 )
-from diffusers.models.attention import FreeNoiseTransformerBlock
-from diffusers.utils import is_xformers_available, logging
+from diffusers_udated.models.attention import FreeNoiseTransformerBlock
+from diffusers_udated.utils import is_xformers_available, logging
 
 from ...testing_utils import require_accelerator, torch_device
 from ..pipeline_params import TEXT_TO_IMAGE_PARAMS, VIDEO_TO_VIDEO_BATCH_PARAMS
@@ -238,7 +238,7 @@ class AnimateDiffVideoToVideoControlNetPipelineFastTests(
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}

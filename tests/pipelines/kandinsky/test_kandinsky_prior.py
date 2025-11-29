@@ -27,7 +27,7 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import KandinskyPriorPipeline, PriorTransformer, UnCLIPScheduler
+from diffusers_udated import KandinskyPriorPipeline, PriorTransformer, UnCLIPScheduler
 
 from ...testing_utils import enable_full_determinism, skip_mps, torch_device
 from ..test_pipelines_common import PipelineTesterMixin

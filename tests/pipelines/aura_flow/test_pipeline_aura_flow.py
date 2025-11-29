@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, UMT5EncoderModel
 
-from diffusers import AuraFlowPipeline, AuraFlowTransformer2DModel, AutoencoderKL, FlowMatchEulerDiscreteScheduler
+from diffusers_udated import AuraFlowPipeline, AuraFlowTransformer2DModel, AutoencoderKL, FlowMatchEulerDiscreteScheduler
 
 from ..test_pipelines_common import (
     PipelineTesterMixin,

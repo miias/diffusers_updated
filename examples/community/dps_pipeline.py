@@ -20,8 +20,8 @@ import numpy as np
 import torch
 from PIL import Image
 
-from diffusers import DDPMScheduler, DiffusionPipeline, ImagePipelineOutput, UNet2DModel
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated import DDPMScheduler, DiffusionPipeline, ImagePipelineOutput, UNet2DModel
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 class DPSPipeline(DiffusionPipeline):

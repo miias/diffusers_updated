@@ -3,7 +3,7 @@ import unittest
 import torch
 import torch.nn.functional as F
 
-from diffusers import VQDiffusionScheduler
+from diffusers_udated import VQDiffusionScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

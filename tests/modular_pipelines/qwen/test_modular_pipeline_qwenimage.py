@@ -17,7 +17,7 @@
 import PIL
 import pytest
 
-from diffusers.modular_pipelines import (
+from diffusers_udated.modular_pipelines import (
     QwenImageAutoBlocks,
     QwenImageEditAutoBlocks,
     QwenImageEditModularPipeline,

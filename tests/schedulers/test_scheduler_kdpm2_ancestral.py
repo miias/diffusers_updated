@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import KDPM2AncestralDiscreteScheduler
+from diffusers_udated import KDPM2AncestralDiscreteScheduler
 
 from ..testing_utils import torch_device
 from .test_schedulers import SchedulerCommonTest

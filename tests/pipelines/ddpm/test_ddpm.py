@@ -18,7 +18,7 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DDPMPipeline, DDPMScheduler, UNet2DModel
+from diffusers_udated import DDPMPipeline, DDPMScheduler, UNet2DModel
 
 from ...testing_utils import enable_full_determinism, require_torch_accelerator, slow, torch_device
 

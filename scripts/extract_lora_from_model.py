@@ -28,7 +28,7 @@ import torch
 from safetensors.torch import save_file
 from tqdm.auto import tqdm
 
-from diffusers import CogVideoXTransformer3DModel
+from diffusers_udated import CogVideoXTransformer3DModel
 
 
 RANK = 64

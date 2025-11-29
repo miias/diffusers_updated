@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import HunyuanVideoTransformer3DModel
+from diffusers_udated import HunyuanVideoTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

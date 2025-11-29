@@ -28,7 +28,7 @@ from transformers import (
     CLIPTokenizer,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -228,7 +228,7 @@ class StableDiffusionPipelineFastTests(
         assert np.abs(image_slice.flatten() - expected_slice).max() < 1e-2
 
     def test_stable_diffusion_ays(self):
-        from diffusers.schedulers import AysSchedules
+        from diffusers_udated.schedulers import AysSchedules
 
         timestep_schedule = AysSchedules["StableDiffusionTimesteps"]
         sigma_schedule = AysSchedules["StableDiffusionSigmas"]

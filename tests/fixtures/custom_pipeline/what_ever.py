@@ -19,8 +19,8 @@ from typing import Optional, Tuple, Union
 
 import torch
 
-from diffusers import SchedulerMixin, UNet2DModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
+from diffusers_udated import SchedulerMixin, UNet2DModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 
 
 class CustomLocalPipeline(DiffusionPipeline):

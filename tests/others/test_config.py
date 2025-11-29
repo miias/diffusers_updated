@@ -18,7 +18,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from diffusers import (
+from diffusers_udated import (
     DDIMScheduler,
     DDPMScheduler,
     DPMSolverMultistepScheduler,
@@ -27,7 +27,7 @@ from diffusers import (
     PNDMScheduler,
     logging,
 )
-from diffusers.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
 
 from ..testing_utils import CaptureLogger
 

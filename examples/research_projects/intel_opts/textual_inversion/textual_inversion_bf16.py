@@ -24,10 +24,10 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
-from diffusers import AutoencoderKL, DDPMScheduler, PNDMScheduler, StableDiffusionPipeline, UNet2DConditionModel
-from diffusers.optimization import get_scheduler
-from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker
-from diffusers.utils import check_min_version
+from diffusers_udated import AutoencoderKL, DDPMScheduler, PNDMScheduler, StableDiffusionPipeline, UNet2DConditionModel
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionSafetyChecker
+from diffusers_udated.utils import check_min_version
 
 
 if version.parse(version.parse(PIL.__version__).base_version) >= version.parse("9.1.0"):

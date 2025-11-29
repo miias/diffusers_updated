@@ -18,15 +18,15 @@ from huggingface_hub import create_repo, upload_folder
 from torchvision import transforms
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDPMScheduler,
     StableDiffusionPipeline,
     UNet2DConditionModel,
 )
-from diffusers.training_utils import compute_snr
-from diffusers.utils import is_wandb_available
-from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_card
+from diffusers_udated.training_utils import compute_snr
+from diffusers_udated.utils import is_wandb_available
+from diffusers_udated.utils.hub_utils import load_or_create_model_card, populate_model_card
 
 
 if is_wandb_available():

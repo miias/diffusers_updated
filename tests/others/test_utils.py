@@ -18,8 +18,8 @@ import unittest
 
 import pytest
 
-from diffusers import __version__
-from diffusers.utils import deprecate
+from diffusers_udated import __version__
+from diffusers_udated.utils import deprecate
 
 from ..testing_utils import Expectations, str_to_bool
 

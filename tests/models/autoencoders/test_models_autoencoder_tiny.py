@@ -20,7 +20,7 @@ import unittest
 import torch
 from parameterized import parameterized
 
-from diffusers import AutoencoderTiny
+from diffusers_udated import AutoencoderTiny
 
 from ...testing_utils import (
     backend_empty_cache,

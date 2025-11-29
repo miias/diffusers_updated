@@ -24,11 +24,11 @@ import torch
 from controlnet_pixart_alpha import PixArtControlNetAdapterModel, PixArtControlNetTransformerModel
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers.image_processor import PipelineImageInput, PixArtImageProcessor
-from diffusers.models import AutoencoderKL, PixArtTransformer2DModel
-from diffusers.pipelines import DiffusionPipeline, ImagePipelineOutput
-from diffusers.schedulers import DPMSolverMultistepScheduler
-from diffusers.utils import (
+from diffusers_udated.image_processor import PipelineImageInput, PixArtImageProcessor
+from diffusers_udated.models import AutoencoderKL, PixArtTransformer2DModel
+from diffusers_udated.pipelines import DiffusionPipeline, ImagePipelineOutput
+from diffusers_udated.schedulers import DPMSolverMultistepScheduler
+from diffusers_udated.utils import (
     BACKENDS_MAPPING,
     deprecate,
     is_bs4_available,
@@ -36,7 +36,7 @@ from diffusers.utils import (
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

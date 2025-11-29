@@ -4,9 +4,9 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import DDPMScheduler, UNet2DConditionModel
-from diffusers.models.attention_processor import AttnAddedKVProcessor
-from diffusers.pipelines.deepfloyd_if import IFWatermarker
+from diffusers_udated import DDPMScheduler, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import AttnAddedKVProcessor
+from diffusers_udated.pipelines.deepfloyd_if import IFWatermarker
 
 from ...testing_utils import torch_device
 from ..test_pipelines_common import to_np

@@ -12,17 +12,17 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     DDPMWuerstchenScheduler,
     StableCascadeCombinedPipeline,
     StableCascadeDecoderPipeline,
     StableCascadePriorPipeline,
 )
-from diffusers.loaders.single_file_utils import convert_stable_cascade_unet_single_file_to_diffusers
-from diffusers.models import StableCascadeUNet
-from diffusers.models.model_loading_utils import load_model_dict_into_meta
-from diffusers.pipelines.wuerstchen import PaellaVQModel
-from diffusers.utils import is_accelerate_available
+from diffusers_udated.loaders.single_file_utils import convert_stable_cascade_unet_single_file_to_diffusers
+from diffusers_udated.models import StableCascadeUNet
+from diffusers_udated.models.model_loading_utils import load_model_dict_into_meta
+from diffusers_udated.pipelines.wuerstchen import PaellaVQModel
+from diffusers_udated.utils import is_accelerate_available
 
 
 if is_accelerate_available():

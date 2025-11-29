@@ -18,8 +18,8 @@ import unittest
 import numpy as np
 import pytest
 
-from diffusers import KandinskyCombinedPipeline, KandinskyImg2ImgCombinedPipeline, KandinskyInpaintCombinedPipeline
-from diffusers.utils import is_transformers_version
+from diffusers_udated import KandinskyCombinedPipeline, KandinskyImg2ImgCombinedPipeline, KandinskyInpaintCombinedPipeline
+from diffusers_udated.utils import is_transformers_version
 
 from ...testing_utils import enable_full_determinism, require_torch_accelerator, torch_device
 from ..test_pipelines_common import PipelineTesterMixin

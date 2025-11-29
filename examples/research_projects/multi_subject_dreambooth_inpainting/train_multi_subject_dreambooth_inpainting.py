@@ -21,14 +21,14 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDPMScheduler,
     StableDiffusionInpaintPipeline,
     UNet2DConditionModel,
 )
-from diffusers.optimization import get_scheduler
-from diffusers.utils import check_min_version, is_wandb_available
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.utils import check_min_version, is_wandb_available
 
 
 if is_wandb_available():

@@ -21,7 +21,7 @@ import torch
 from PIL import Image
 from transformers import Gemma2Config, Gemma2Model, GemmaTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     FlowMatchEulerDiscreteScheduler,
     SanaImageToVideoPipeline,

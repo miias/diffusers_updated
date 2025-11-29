@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from transformers import CLIPTextModel, CLIPTokenizer, LlamaModel, LlamaTokenizerFast
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLHunyuanVideo,
     FlowMatchEulerDiscreteScheduler,
     HunyuanVideoPipeline,

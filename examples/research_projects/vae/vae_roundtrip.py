@@ -22,16 +22,16 @@ import torch
 from PIL import Image
 from torchvision import transforms  # type: ignore
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.models.autoencoders.autoencoder_kl import (
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.models.autoencoders.autoencoder_kl import (
     AutoencoderKL,
     AutoencoderKLOutput,
 )
-from diffusers.models.autoencoders.autoencoder_tiny import (
+from diffusers_udated.models.autoencoders.autoencoder_tiny import (
     AutoencoderTiny,
     AutoencoderTinyOutput,
 )
-from diffusers.models.autoencoders.vae import DecoderOutput
+from diffusers_udated.models.autoencoders.vae import DecoderOutput
 
 
 SupportedAutoencoder = Union[AutoencoderKL, AutoencoderTiny]

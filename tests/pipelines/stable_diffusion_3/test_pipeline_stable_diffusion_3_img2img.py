@@ -6,13 +6,13 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     SD3Transformer2DModel,
     StableDiffusion3Img2ImgPipeline,
 )
-from diffusers.utils import load_image
+from diffusers_udated.utils import load_image
 
 from ...testing_utils import (
     Expectations,

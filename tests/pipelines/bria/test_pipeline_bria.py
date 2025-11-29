@@ -21,12 +21,12 @@ import torch
 from huggingface_hub import hf_hub_download
 from transformers import T5EncoderModel, T5TokenizerFast
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     BriaTransformer2DModel,
     FlowMatchEulerDiscreteScheduler,
 )
-from diffusers.pipelines.bria import BriaPipeline
+from diffusers_udated.pipelines.bria import BriaPipeline
 
 # from ..test_pipelines_common import PipelineTesterMixin, check_qkv_fused_layers_exist
 from tests.pipelines.test_pipelines_common import PipelineTesterMixin, to_np

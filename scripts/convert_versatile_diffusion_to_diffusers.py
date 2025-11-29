@@ -25,7 +25,7 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -36,7 +36,7 @@ from diffusers import (
     UNet2DConditionModel,
     VersatileDiffusionPipeline,
 )
-from diffusers.pipelines.versatile_diffusion.modeling_text_unet import UNetFlatConditionModel
+from diffusers_udated.pipelines.versatile_diffusion.modeling_text_unet import UNetFlatConditionModel
 
 
 SCHEDULER_CONFIG = Namespace(

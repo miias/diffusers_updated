@@ -24,8 +24,8 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AutoencoderKL,
     AutoencoderTiny,
     DDIMScheduler,
@@ -68,8 +68,8 @@ class MarigoldIntrinsicsPipelineTesterMixin(PipelineTesterMixin):
         # Reset generator in case it is has been used in self.get_dummy_inputs
         inputs["generator"] = self.get_generator(0)
 
-        logger = diffusers.logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger = diffusers_udated.logging.get_logger(pipe.__module__)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}
@@ -116,8 +116,8 @@ class MarigoldIntrinsicsPipelineTesterMixin(PipelineTesterMixin):
         inputs = self.get_dummy_inputs(torch_device)
         inputs["generator"] = self.get_generator(0)
 
-        logger = diffusers.logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger = diffusers_udated.logging.get_logger(pipe.__module__)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # prepare batched inputs
         batched_inputs = []
@@ -149,7 +149,7 @@ class MarigoldIntrinsicsPipelineTesterMixin(PipelineTesterMixin):
 
             batched_inputs.append(batched_input)
 
-        logger.setLevel(level=diffusers.logging.WARNING)
+        logger.setLevel(level=diffusers_udated.logging.WARNING)
         for batch_size, batched_input in zip(batch_sizes, batched_inputs):
             output = pipe(**batched_input)
             assert len(output[0]) == batch_size * pipe.n_targets  # only changed here

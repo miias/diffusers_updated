@@ -19,9 +19,9 @@ import unittest
 import torch
 from parameterized import parameterized
 
-from diffusers import BitsAndBytesConfig, DiffusionPipeline, QuantoConfig
-from diffusers.quantizers import PipelineQuantizationConfig
-from diffusers.utils import logging
+from diffusers_udated import BitsAndBytesConfig, DiffusionPipeline, QuantoConfig
+from diffusers_udated.quantizers import PipelineQuantizationConfig
+from diffusers_udated.utils import logging
 
 from ..testing_utils import (
     CaptureLogger,

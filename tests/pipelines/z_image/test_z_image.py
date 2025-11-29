@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from transformers import Qwen2Tokenizer, Qwen3Config, Qwen3Model
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     ZImagePipeline,

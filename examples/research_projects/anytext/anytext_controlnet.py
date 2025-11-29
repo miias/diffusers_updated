@@ -24,12 +24,12 @@ from typing import Any, Dict, Optional, Tuple, Union
 import torch
 from torch import nn
 
-from diffusers.configuration_utils import register_to_config
-from diffusers.models.controlnets.controlnet import (
+from diffusers_udated.configuration_utils import register_to_config
+from diffusers_udated.models.controlnets.controlnet import (
     ControlNetModel,
     ControlNetOutput,
 )
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

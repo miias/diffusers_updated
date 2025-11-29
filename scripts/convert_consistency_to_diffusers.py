@@ -3,7 +3,7 @@ import os
 
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     CMStochasticIterativeScheduler,
     ConsistencyModelPipeline,
     UNet2DModel,

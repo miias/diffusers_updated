@@ -3,10 +3,10 @@ import gc
 import pytest
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     StableDiffusionUpscalePipeline,
 )
-from diffusers.utils import load_image
+from diffusers_udated.utils import load_image
 
 from ..testing_utils import (
     backend_empty_cache,

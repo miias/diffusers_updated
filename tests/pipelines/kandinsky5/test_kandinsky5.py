@@ -24,7 +24,7 @@ from transformers import (
     Qwen2VLProcessor,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLHunyuanVideo,
     FlowMatchEulerDiscreteScheduler,
     Kandinsky5T2VPipeline,

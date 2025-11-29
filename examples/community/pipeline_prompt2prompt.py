@@ -29,29 +29,29 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import AutoencoderKL, DiffusionPipeline, UNet2DConditionModel
-from diffusers.configuration_utils import FrozenDict, deprecate
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated import AutoencoderKL, DiffusionPipeline, UNet2DConditionModel
+from diffusers_udated.configuration_utils import FrozenDict, deprecate
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     IPAdapterMixin,
     StableDiffusionLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models.attention import Attention
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import (
+from diffusers_udated.models.attention import Attention
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import (
     StableDiffusionSafetyChecker,
 )
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     logging,
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)

@@ -2,9 +2,9 @@ import gc
 import tempfile
 import unittest
 
-from diffusers import NVIDIAModelOptConfig, SD3Transformer2DModel, StableDiffusion3Pipeline
-from diffusers.utils import is_nvidia_modelopt_available, is_torch_available
-from diffusers.utils.testing_utils import (
+from diffusers_udated import NVIDIAModelOptConfig, SD3Transformer2DModel, StableDiffusion3Pipeline
+from diffusers_udated.utils import is_nvidia_modelopt_available, is_torch_available
+from diffusers_udated.utils.testing_utils import (
     backend_empty_cache,
     backend_reset_peak_memory_stats,
     enable_full_determinism,

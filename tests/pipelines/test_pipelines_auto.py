@@ -23,14 +23,14 @@ from pathlib import Path
 import torch
 from transformers import CLIPVisionConfig, CLIPVisionModelWithProjection
 
-from diffusers import (
+from diffusers_udated import (
     AutoPipelineForImage2Image,
     AutoPipelineForInpainting,
     AutoPipelineForText2Image,
     ControlNetModel,
     DiffusionPipeline,
 )
-from diffusers.pipelines.auto_pipeline import (
+from diffusers_udated.pipelines.auto_pipeline import (
     AUTO_IMAGE2IMAGE_PIPELINES_MAPPING,
     AUTO_INPAINT_PIPELINES_MAPPING,
     AUTO_TEXT2IMAGE_PIPELINES_MAPPING,

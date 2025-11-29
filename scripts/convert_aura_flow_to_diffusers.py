@@ -3,7 +3,7 @@ import argparse
 import torch
 from huggingface_hub import hf_hub_download
 
-from diffusers.models.transformers.auraflow_transformer_2d import AuraFlowTransformer2DModel
+from diffusers_udated.models.transformers.auraflow_transformer_2d import AuraFlowTransformer2DModel
 
 
 def load_original_state_dict(args):

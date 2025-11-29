@@ -23,7 +23,7 @@ from huggingface_hub import hf_hub_download
 from safetensors.torch import load_file
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoPipelineForImage2Image,
     AutoPipelineForText2Image,
     DDIMScheduler,
@@ -31,7 +31,7 @@ from diffusers import (
     LCMScheduler,
     StableDiffusionPipeline,
 )
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 from ..testing_utils import (
     Expectations,

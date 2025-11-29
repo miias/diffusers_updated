@@ -15,7 +15,7 @@
 
 import unittest
 
-from diffusers import AutoencoderKLWan
+from diffusers_udated import AutoencoderKLWan
 
 from ...testing_utils import enable_full_determinism, floats_tensor, torch_device
 from ..test_modeling_common import ModelTesterMixin

@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import PixArtTransformer2DModel, Transformer2DModel
+from diffusers_udated import PixArtTransformer2DModel, Transformer2DModel
 
 from ...testing_utils import (
     enable_full_determinism,

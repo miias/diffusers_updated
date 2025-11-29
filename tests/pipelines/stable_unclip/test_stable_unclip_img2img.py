@@ -13,10 +13,10 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import AutoencoderKL, DDIMScheduler, DDPMScheduler, StableUnCLIPImg2ImgPipeline, UNet2DConditionModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated import AutoencoderKL, DDIMScheduler, DDPMScheduler, StableUnCLIPImg2ImgPipeline, UNet2DConditionModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

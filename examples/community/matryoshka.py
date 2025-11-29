@@ -34,10 +34,10 @@ from PIL import Image
 from torch import nn
 from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection, T5EncoderModel, T5TokenizerFast
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.configuration_utils import ConfigMixin, FrozenDict, LegacyConfigMixin, register_to_config
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.configuration_utils import ConfigMixin, FrozenDict, LegacyConfigMixin, register_to_config
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     IPAdapterMixin,
     PeftAdapterMixin,
@@ -45,9 +45,9 @@ from diffusers.loaders import (
     TextualInversionLoaderMixin,
     UNet2DConditionLoadersMixin,
 )
-from diffusers.loaders.single_file_model import FromOriginalModelMixin
-from diffusers.models.activations import GELU, get_activation
-from diffusers.models.attention_processor import (
+from diffusers_udated.loaders.single_file_model import FromOriginalModelMixin
+from diffusers_udated.models.activations import GELU, get_activation
+from diffusers_udated.models.attention_processor import (
     ADDED_KV_ATTENTION_PROCESSORS,
     CROSS_ATTENTION_PROCESSORS,
     Attention,
@@ -56,8 +56,8 @@ from diffusers.models.attention_processor import (
     AttnProcessor,
     FusedAttnProcessor2_0,
 )
-from diffusers.models.downsampling import Downsample2D
-from diffusers.models.embeddings import (
+from diffusers_udated.models.downsampling import Downsample2D
+from diffusers_udated.models.embeddings import (
     GaussianFourierProjection,
     GLIGENTextBoundingboxProjection,
     ImageHintTimeEmbedding,
@@ -69,14 +69,14 @@ from diffusers.models.embeddings import (
     TimestepEmbedding,
     Timesteps,
 )
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.models.modeling_utils import LegacyModelMixin, ModelMixin
-from diffusers.models.resnet import ResnetBlock2D
-from diffusers.models.unets.unet_2d_blocks import DownBlock2D, UpBlock2D
-from diffusers.models.upsampling import Upsample2D
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.schedulers.scheduling_utils import SchedulerMixin
-from diffusers.utils import (
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.models.modeling_utils import LegacyModelMixin, ModelMixin
+from diffusers_udated.models.resnet import ResnetBlock2D
+from diffusers_udated.models.unets.unet_2d_blocks import DownBlock2D, UpBlock2D
+from diffusers_udated.models.upsampling import Upsample2D
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.schedulers.scheduling_utils import SchedulerMixin
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     BaseOutput,
     deprecate,
@@ -86,7 +86,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import apply_freeu, randn_tensor
+from diffusers_udated.utils.torch_utils import apply_freeu, randn_tensor
 
 
 if is_torch_xla_available():

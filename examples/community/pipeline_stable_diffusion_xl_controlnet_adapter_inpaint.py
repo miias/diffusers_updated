@@ -29,27 +29,27 @@ from transformers import (
     CLIPTokenizer,
 )
 
-from diffusers import DiffusionPipeline
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated import DiffusionPipeline
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     StableDiffusionXLLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models import (
+from diffusers_udated.models import (
     AutoencoderKL,
     ControlNetModel,
     MultiAdapter,
     T2IAdapter,
     UNet2DConditionModel,
 )
-from diffusers.models.attention_processor import AttnProcessor2_0, XFormersAttnProcessor
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.pipelines.controlnet.multicontrolnet import MultiControlNetModel
-from diffusers.pipelines.pipeline_utils import StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.models.attention_processor import AttnProcessor2_0, XFormersAttnProcessor
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.pipelines.controlnet.multicontrolnet import MultiControlNetModel
+from diffusers_udated.pipelines.pipeline_utils import StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     PIL_INTERPOLATION,
     USE_PEFT_BACKEND,
     logging,
@@ -57,7 +57,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import is_compiled_module, randn_tensor
+from diffusers_udated.utils.torch_utils import is_compiled_module, randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

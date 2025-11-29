@@ -2,9 +2,9 @@ import gc
 import tempfile
 import unittest
 
-from diffusers import FluxPipeline, FluxTransformer2DModel, QuantoConfig
-from diffusers.models.attention_processor import Attention
-from diffusers.utils import is_optimum_quanto_available, is_torch_available
+from diffusers_udated import FluxPipeline, FluxTransformer2DModel, QuantoConfig
+from diffusers_udated.models.attention_processor import Attention
+from diffusers_udated.utils import is_optimum_quanto_available, is_torch_available
 
 from ...testing_utils import (
     backend_empty_cache,

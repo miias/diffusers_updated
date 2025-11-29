@@ -1,6 +1,6 @@
 import warnings
 
-from diffusers import StableDiffusionImg2ImgPipeline  # noqa F401
+from diffusers_udated import StableDiffusionImg2ImgPipeline  # noqa F401
 
 
 warnings.warn(

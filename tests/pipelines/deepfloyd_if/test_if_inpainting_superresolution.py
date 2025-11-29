@@ -19,9 +19,9 @@ import unittest
 
 import torch
 
-from diffusers import IFInpaintingSuperResolutionPipeline
-from diffusers.models.attention_processor import AttnAddedKVProcessor
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated import IFInpaintingSuperResolutionPipeline
+from diffusers_udated.models.attention_processor import AttnAddedKVProcessor
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

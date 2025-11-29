@@ -5,9 +5,9 @@ from PIL import Image
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import AutoencoderKL, DDIMScheduler, DiffusionPipeline, UNet2DConditionModel
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.utils import (
+from diffusers_udated import AutoencoderKL, DDIMScheduler, DiffusionPipeline, UNet2DConditionModel
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.utils import (
     deprecate,
 )
 

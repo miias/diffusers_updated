@@ -3,7 +3,7 @@ name: Build PR Documentation
 on:
   pull_request:
     paths:
-      - "src/diffusers/**.py"
+      - "src/diffusers_updated/**.py"
       - "examples/**"
       - "docs/**"
 

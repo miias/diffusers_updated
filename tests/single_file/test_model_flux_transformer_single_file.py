@@ -15,7 +15,7 @@
 
 import gc
 
-from diffusers import (
+from diffusers_udated import (
     FluxTransformer2DModel,
 )
 

@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import AutoencoderKLCogVideoX
+from diffusers_udated import AutoencoderKLCogVideoX
 
 from ...testing_utils import (
     enable_full_determinism,

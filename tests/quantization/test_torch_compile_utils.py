@@ -17,7 +17,7 @@ import inspect
 
 import torch
 
-from diffusers import DiffusionPipeline
+from diffusers_udated import DiffusionPipeline
 
 from ..testing_utils import backend_empty_cache, require_torch_accelerator, slow, torch_device
 

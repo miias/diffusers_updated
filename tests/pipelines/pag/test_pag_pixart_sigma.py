@@ -21,15 +21,15 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, T5EncoderModel
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     PixArtSigmaPAGPipeline,
     PixArtSigmaPipeline,
     PixArtTransformer2DModel,
 )
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 from ...testing_utils import (
     CaptureLogger,
@@ -198,7 +198,7 @@ class PixArtSigmaPAGPipelineFastTests(PipelineTesterMixin, unittest.TestCase):
         output = pipe(**inputs)[0]
 
         logger = logging.get_logger("diffusers.pipelines.pipeline_utils")
-        logger.setLevel(diffusers.logging.INFO)
+        logger.setLevel(diffusers_udated.logging.INFO)
 
         with tempfile.TemporaryDirectory() as tmpdir:
             pipe.save_pretrained(tmpdir, safe_serialization=False)
@@ -298,7 +298,7 @@ class PixArtSigmaPAGPipelineFastTests(PipelineTesterMixin, unittest.TestCase):
         inputs["generator"] = self.get_generator(0)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}

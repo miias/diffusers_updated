@@ -24,7 +24,7 @@ import torch
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     ControlNetModel,
     DDIMScheduler,
@@ -32,7 +32,7 @@ from diffusers import (
     StableDiffusionControlNetPAGInpaintPipeline,
     UNet2DConditionModel,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import enable_full_determinism, floats_tensor, torch_device
 from ..pipeline_params import (

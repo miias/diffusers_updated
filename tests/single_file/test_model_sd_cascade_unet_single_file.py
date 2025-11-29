@@ -17,8 +17,8 @@ import gc
 
 import torch
 
-from diffusers import StableCascadeUNet
-from diffusers.utils import logging
+from diffusers_udated import StableCascadeUNet
+from diffusers_udated.utils import logging
 
 from ..testing_utils import (
     backend_empty_cache,

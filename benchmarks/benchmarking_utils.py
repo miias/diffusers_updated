@@ -12,8 +12,8 @@ import pandas as pd
 import torch
 import torch.utils.benchmark as benchmark
 
-from diffusers.models.modeling_utils import ModelMixin
-from diffusers.utils.testing_utils import require_torch_gpu, torch_device
+from diffusers_udated.models.modeling_utils import ModelMixin
+from diffusers_udated.utils.testing_utils import require_torch_gpu, torch_device
 
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")

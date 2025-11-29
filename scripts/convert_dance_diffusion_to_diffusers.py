@@ -10,8 +10,8 @@ from audio_diffusion.models import DiffusionAttnUnet1D
 from diffusion import sampling
 from torch import nn
 
-from diffusers import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
-from diffusers.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
+from diffusers_udated import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
+from diffusers_udated.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
 
 
 MODELS_MAP = {

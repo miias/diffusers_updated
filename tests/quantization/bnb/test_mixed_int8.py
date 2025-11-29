@@ -21,7 +21,7 @@ import pytest
 from huggingface_hub import hf_hub_download
 from PIL import Image
 
-from diffusers import (
+from diffusers_udated import (
     BitsAndBytesConfig,
     DiffusionPipeline,
     FluxControlPipeline,
@@ -30,8 +30,8 @@ from diffusers import (
     SD3Transformer2DModel,
     logging,
 )
-from diffusers.quantizers import PipelineQuantizationConfig
-from diffusers.utils import is_accelerate_version
+from diffusers_udated.quantizers import PipelineQuantizationConfig
+from diffusers_udated.utils import is_accelerate_version
 
 from ...testing_utils import (
     CaptureLogger,
@@ -75,7 +75,7 @@ if is_torch_available():
 if is_bitsandbytes_available():
     import bitsandbytes as bnb
 
-    from diffusers.quantizers.bitsandbytes import replace_with_bnb_linear
+    from diffusers_udated.quantizers.bitsandbytes import replace_with_bnb_linear
 
 
 @require_bitsandbytes_version_greater("0.43.2")

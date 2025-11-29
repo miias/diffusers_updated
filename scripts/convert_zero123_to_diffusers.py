@@ -24,12 +24,12 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers.models import (
+from diffusers_udated.models import (
     AutoencoderKL,
     UNet2DConditionModel,
 )
-from diffusers.schedulers import DDIMScheduler
-from diffusers.utils import logging
+from diffusers_udated.schedulers import DDIMScheduler
+from diffusers_udated.utils import logging
 
 
 logger = logging.get_logger(__name__)

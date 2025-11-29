@@ -24,7 +24,7 @@ import torch
 from packaging import version
 from transformers import CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     ControlNetModel,
     EulerDiscreteScheduler,
     LCMScheduler,
@@ -33,8 +33,8 @@ from diffusers import (
     StableDiffusionXLPipeline,
     T2IAdapter,
 )
-from diffusers.utils import logging
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 from ..testing_utils import (
     CaptureLogger,

@@ -32,10 +32,10 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers import DiffusionPipeline, StableDiffusionXLPipeline
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated import DiffusionPipeline, StableDiffusionXLPipeline
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
 
 
 # Note: At this time, the intent is to use the T5 encoder mentioned

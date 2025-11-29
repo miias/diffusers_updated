@@ -3,8 +3,8 @@ from functools import partial
 import torch
 from benchmarking_utils import BenchmarkMixin, BenchmarkScenario, model_init_fn
 
-from diffusers import UNet2DConditionModel
-from diffusers.utils.testing_utils import torch_device
+from diffusers_udated import UNet2DConditionModel
+from diffusers_udated.utils.testing_utils import torch_device
 
 
 CKPT_ID = "stabilityai/stable-diffusion-xl-base-1.0"

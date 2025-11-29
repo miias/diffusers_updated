@@ -22,7 +22,7 @@ import torch
 from PIL import Image
 from transformers import CLIPImageProcessor, CLIPVisionConfig, CLIPVisionModelWithProjection
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DPMSolverMultistepScheduler,
     PNDMScheduler,

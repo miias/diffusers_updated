@@ -4,14 +4,14 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     FluxControlNetImg2ImgPipeline,
     FluxControlNetModel,
     FluxTransformer2DModel,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     torch_device,

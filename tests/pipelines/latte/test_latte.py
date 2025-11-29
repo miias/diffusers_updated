@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     FasterCacheConfig,
@@ -30,7 +30,7 @@ from diffusers import (
     LatteTransformer3DModel,
     PyramidAttentionBroadcastConfig,
 )
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

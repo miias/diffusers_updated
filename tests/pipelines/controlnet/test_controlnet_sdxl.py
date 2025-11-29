@@ -21,7 +21,7 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     ControlNetModel,
     EulerDiscreteScheduler,
@@ -31,10 +31,10 @@ from diffusers import (
     StableDiffusionXLImg2ImgPipeline,
     UNet2DConditionModel,
 )
-from diffusers.models.unets.unet_2d_blocks import UNetMidBlock2D
-from diffusers.pipelines.controlnet.pipeline_controlnet import MultiControlNetModel
-from diffusers.utils.import_utils import is_xformers_available
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.models.unets.unet_2d_blocks import UNetMidBlock2D
+from diffusers_udated.pipelines.controlnet.pipeline_controlnet import MultiControlNetModel
+from diffusers_udated.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

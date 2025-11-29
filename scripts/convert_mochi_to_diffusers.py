@@ -6,8 +6,8 @@ from accelerate import init_empty_weights
 from safetensors.torch import load_file
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers import AutoencoderKLMochi, FlowMatchEulerDiscreteScheduler, MochiPipeline, MochiTransformer3DModel
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated import AutoencoderKLMochi, FlowMatchEulerDiscreteScheduler, MochiPipeline, MochiTransformer3DModel
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 
 CTX = init_empty_weights if is_accelerate_available() else nullcontext

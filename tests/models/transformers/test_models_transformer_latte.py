@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import LatteTransformer3DModel
+from diffusers_udated import LatteTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import HunyuanDiT2DModel
+from diffusers_udated import HunyuanDiT2DModel
 
 from ...testing_utils import (
     enable_full_determinism,

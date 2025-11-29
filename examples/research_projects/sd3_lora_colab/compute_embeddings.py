@@ -22,7 +22,7 @@ import pandas as pd
 import torch
 from transformers import T5EncoderModel
 
-from diffusers import StableDiffusion3Pipeline
+from diffusers_udated import StableDiffusion3Pipeline
 
 
 PROMPT = "a photo of sks dog"

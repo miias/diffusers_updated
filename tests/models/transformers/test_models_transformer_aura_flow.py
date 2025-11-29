@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import AuraFlowTransformer2DModel
+from diffusers_udated import AuraFlowTransformer2DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin

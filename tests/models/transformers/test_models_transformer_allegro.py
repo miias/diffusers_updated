@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import AllegroTransformer3DModel
+from diffusers_udated import AllegroTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

@@ -2,7 +2,7 @@ import gc
 
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     StableDiffusionXLPipeline,
 )
 

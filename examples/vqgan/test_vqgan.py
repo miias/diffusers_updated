@@ -23,7 +23,7 @@ import tempfile
 
 import torch
 
-from diffusers import VQModel
+from diffusers_udated import VQModel
 
 
 # Add parent directories to path to import from tests

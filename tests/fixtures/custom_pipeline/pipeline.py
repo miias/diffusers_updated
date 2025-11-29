@@ -19,7 +19,7 @@ from typing import Optional, Tuple, Union
 
 import torch
 
-from diffusers import DiffusionPipeline, ImagePipelineOutput, SchedulerMixin, UNet2DModel
+from diffusers_udated import DiffusionPipeline, ImagePipelineOutput, SchedulerMixin, UNet2DModel
 
 
 class CustomLocalPipeline(DiffusionPipeline):

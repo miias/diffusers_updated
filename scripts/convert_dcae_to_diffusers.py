@@ -5,7 +5,7 @@ import torch
 from huggingface_hub import hf_hub_download
 from safetensors.torch import load_file
 
-from diffusers import AutoencoderDC
+from diffusers_udated import AutoencoderDC
 
 
 def remap_qkv_(key: str, state_dict: Dict[str, Any]):

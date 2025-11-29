@@ -19,8 +19,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import AutoencoderKL, DDIMScheduler, DiTPipeline, DiTTransformer2DModel, DPMSolverMultistepScheduler
-from diffusers.utils import is_xformers_available
+from diffusers_udated import AutoencoderKL, DDIMScheduler, DiTPipeline, DiTTransformer2DModel, DPMSolverMultistepScheduler
+from diffusers_udated.utils import is_xformers_available
 
 from ...testing_utils import (
     backend_empty_cache,

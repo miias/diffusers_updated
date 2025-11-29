@@ -18,21 +18,21 @@ from packaging import version
 from PIL import Image
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import AutoencoderKL, UNet2DConditionModel
-from diffusers.configuration_utils import FrozenDict
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import StableDiffusionLoraLoaderMixin, TextualInversionLoaderMixin
-from diffusers.models.attention import BasicTransformerBlock
-from diffusers.models.attention_processor import LoRAAttnProcessor
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.schedulers import EulerAncestralDiscreteScheduler, KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.configuration_utils import FrozenDict
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import StableDiffusionLoraLoaderMixin, TextualInversionLoaderMixin
+from diffusers_udated.models.attention import BasicTransformerBlock
+from diffusers_udated.models.attention_processor import LoRAAttnProcessor
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.schedulers import EulerAncestralDiscreteScheduler, KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     deprecate,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

@@ -36,18 +36,18 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers.models import (
+from diffusers_udated.models import (
     AutoencoderKL,
     ControlNetModel,
     PriorTransformer,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.latent_diffusion.pipeline_latent_diffusion import LDMBertConfig, LDMBertModel
-from diffusers.pipelines.paint_by_example import PaintByExampleImageEncoder
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
-from diffusers.schedulers import (
+from diffusers_udated.pipelines.latent_diffusion.pipeline_latent_diffusion import LDMBertConfig, LDMBertModel
+from diffusers_udated.pipelines.paint_by_example import PaintByExampleImageEncoder
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
+from diffusers_udated.schedulers import (
     DDIMScheduler,
     DDPMScheduler,
     DPMSolverMultistepScheduler,
@@ -58,8 +58,8 @@ from diffusers.schedulers import (
     PNDMScheduler,
     UnCLIPScheduler,
 )
-from diffusers.utils import is_accelerate_available, logging
-from diffusers.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
+from diffusers_udated.utils import is_accelerate_available, logging
+from diffusers_udated.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
 
 
 if is_accelerate_available():
@@ -1352,7 +1352,7 @@ def download_from_original_stable_diffusion_ckpt(
     """
 
     # import pipelines here to avoid circular import error when using from_single_file method
-    from diffusers import (
+    from diffusers_udated import (
         LDMTextToImagePipeline,
         PaintByExamplePipeline,
         StableDiffusionControlNetPipeline,

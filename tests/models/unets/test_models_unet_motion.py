@@ -21,9 +21,9 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import MotionAdapter, UNet2DConditionModel, UNetMotionModel
-from diffusers.utils import logging
-from diffusers.utils.import_utils import is_xformers_available
+from diffusers_udated import MotionAdapter, UNet2DConditionModel, UNetMotionModel
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.import_utils import is_xformers_available
 
 from ...testing_utils import (
     enable_full_determinism,

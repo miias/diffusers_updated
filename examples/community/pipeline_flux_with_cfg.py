@@ -19,14 +19,14 @@ import numpy as np
 import torch
 from transformers import CLIPTextModel, CLIPTokenizer, T5EncoderModel, T5TokenizerFast
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import FluxLoraLoaderMixin, FromSingleFileMixin
-from diffusers.models.autoencoders import AutoencoderKL
-from diffusers.models.transformers import FluxTransformer2DModel
-from diffusers.pipelines.flux.pipeline_output import FluxPipelineOutput
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.schedulers import FlowMatchEulerDiscreteScheduler
-from diffusers.utils import (
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import FluxLoraLoaderMixin, FromSingleFileMixin
+from diffusers_udated.models.autoencoders import AutoencoderKL
+from diffusers_udated.models.transformers import FluxTransformer2DModel
+from diffusers_udated.pipelines.flux.pipeline_output import FluxPipelineOutput
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.schedulers import FlowMatchEulerDiscreteScheduler
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     deprecate,
     is_torch_xla_available,
@@ -35,7 +35,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

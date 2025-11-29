@@ -34,7 +34,7 @@ from transformers import (
     T5Tokenizer,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AudioLDM2Pipeline,
     AudioLDM2ProjectionModel,
     AudioLDM2UNet2DConditionModel,
@@ -43,7 +43,7 @@ from diffusers import (
     LMSDiscreteScheduler,
     PNDMScheduler,
 )
-from diffusers.utils import is_transformers_version
+from diffusers_udated.utils import is_transformers_version
 
 from ...testing_utils import (
     backend_empty_cache,

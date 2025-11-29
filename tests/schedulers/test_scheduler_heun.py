@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import HeunDiscreteScheduler
+from diffusers_udated import HeunDiscreteScheduler
 
 from ..testing_utils import torch_device
 from .test_schedulers import SchedulerCommonTest

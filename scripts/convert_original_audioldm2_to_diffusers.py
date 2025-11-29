@@ -33,7 +33,7 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AudioLDM2Pipeline,
     AudioLDM2ProjectionModel,
     AudioLDM2UNet2DConditionModel,
@@ -46,8 +46,8 @@ from diffusers import (
     LMSDiscreteScheduler,
     PNDMScheduler,
 )
-from diffusers.utils import is_safetensors_available
-from diffusers.utils.import_utils import BACKENDS_MAPPING
+from diffusers_udated.utils import is_safetensors_available
+from diffusers_udated.utils.import_utils import BACKENDS_MAPPING
 
 
 # Copied from diffusers.pipelines.stable_diffusion.convert_from_ckpt.shave_segments

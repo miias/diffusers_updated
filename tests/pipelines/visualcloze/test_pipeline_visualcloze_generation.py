@@ -7,14 +7,14 @@ import torch
 from PIL import Image
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     FluxTransformer2DModel,
     VisualClozeGenerationPipeline,
 )
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 from ...testing_utils import (
     CaptureLogger,
@@ -193,7 +193,7 @@ class VisualClozeGenerationPipelineFastTests(unittest.TestCase, PipelineTesterMi
         output = pipe(**inputs)[0]
 
         logger = logging.get_logger("diffusers.pipelines.pipeline_utils")
-        logger.setLevel(diffusers.logging.INFO)
+        logger.setLevel(diffusers_udated.logging.INFO)
 
         with tempfile.TemporaryDirectory() as tmpdir:
             pipe.save_pretrained(tmpdir, safe_serialization=False)

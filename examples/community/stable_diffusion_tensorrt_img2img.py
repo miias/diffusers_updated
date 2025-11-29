@@ -44,17 +44,17 @@ from polygraphy.backend.trt import (
 )
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers import DiffusionPipeline
-from diffusers.configuration_utils import FrozenDict, deprecate
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipelines.stable_diffusion import (
+from diffusers_udated import DiffusionPipeline
+from diffusers_udated.configuration_utils import FrozenDict, deprecate
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.pipelines.stable_diffusion import (
     StableDiffusionPipelineOutput,
     StableDiffusionSafetyChecker,
 )
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion_img2img import retrieve_latents
-from diffusers.schedulers import DDIMScheduler
-from diffusers.utils import logging
+from diffusers_udated.pipelines.stable_diffusion.pipeline_stable_diffusion_img2img import retrieve_latents
+from diffusers_udated.schedulers import DDIMScheduler
+from diffusers_udated.utils import logging
 
 
 """

@@ -39,12 +39,12 @@ from tqdm import tqdm
 from transformers import CLIPTextModel, PreTrainedTokenizerFast
 from transformers.utils import ContextManagers
 
-from diffusers import AutoPipelineForText2Image, DDPMWuerstchenScheduler
-from diffusers.optimization import get_scheduler
-from diffusers.pipelines.wuerstchen import DEFAULT_STAGE_C_TIMESTEPS, WuerstchenPrior
-from diffusers.training_utils import EMAModel
-from diffusers.utils import check_min_version, is_wandb_available, make_image_grid
-from diffusers.utils.logging import set_verbosity_error, set_verbosity_info
+from diffusers_udated import AutoPipelineForText2Image, DDPMWuerstchenScheduler
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.pipelines.wuerstchen import DEFAULT_STAGE_C_TIMESTEPS, WuerstchenPrior
+from diffusers_udated.training_utils import EMAModel
+from diffusers_udated.utils import check_min_version, is_wandb_available, make_image_grid
+from diffusers_udated.utils.logging import set_verbosity_error, set_verbosity_info
 
 
 if is_wandb_available():

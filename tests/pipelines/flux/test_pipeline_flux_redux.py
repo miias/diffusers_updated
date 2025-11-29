@@ -4,8 +4,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import FluxPipeline, FluxPriorReduxPipeline
-from diffusers.utils import load_image
+from diffusers_udated import FluxPipeline, FluxPriorReduxPipeline
+from diffusers_udated.utils import load_image
 
 from ...testing_utils import (
     Expectations,

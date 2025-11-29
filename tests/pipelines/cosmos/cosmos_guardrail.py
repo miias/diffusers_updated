@@ -19,8 +19,8 @@ from typing import Union
 import numpy as np
 import torch
 
-from diffusers.configuration_utils import ConfigMixin
-from diffusers.models.modeling_utils import ModelMixin
+from diffusers_udated.configuration_utils import ConfigMixin
+from diffusers_udated.models.modeling_utils import ModelMixin
 
 
 class DummyCosmosSafetyChecker(ModelMixin, ConfigMixin):

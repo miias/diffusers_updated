@@ -23,7 +23,7 @@ from huggingface_hub.utils import insecure_hashlib
 from tqdm.auto import tqdm
 from transformers import T5EncoderModel
 
-from diffusers import FluxPipeline
+from diffusers_udated import FluxPipeline
 
 
 MAX_SEQ_LENGTH = 77

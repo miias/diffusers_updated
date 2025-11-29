@@ -24,8 +24,8 @@ import numpy as np
 import torch
 from huggingface_hub import delete_repo
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     CMStochasticIterativeScheduler,
     DDIMScheduler,
     DEISMultistepScheduler,
@@ -38,9 +38,9 @@ from diffusers import (
     UniPCMultistepScheduler,
     VQDiffusionScheduler,
 )
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.schedulers.scheduling_utils import SchedulerMixin
-from diffusers.utils import logging
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.schedulers.scheduling_utils import SchedulerMixin
+from diffusers_udated.utils import logging
 
 from ..others.test_utils import TOKEN, USER, is_staging_test
 from ..testing_utils import CaptureLogger, torch_device
@@ -103,7 +103,7 @@ class SchedulerBaseTests(unittest.TestCase):
         obj = SchedulerObject()
 
         # mock add obj class to `diffusers`
-        setattr(diffusers, "SchedulerObject", SchedulerObject)
+        setattr(diffusers_udated, "SchedulerObject", SchedulerObject)
         logger = logging.get_logger("diffusers.configuration_utils")
 
         with tempfile.TemporaryDirectory() as tmpdirname:
@@ -148,8 +148,8 @@ class SchedulerBaseTests(unittest.TestCase):
         obj = SchedulerObject()
 
         # mock add obj class to `diffusers`
-        setattr(diffusers, "SchedulerObject", SchedulerObject)
-        setattr(diffusers, "SchedulerObject2", SchedulerObject2)
+        setattr(diffusers_udated, "SchedulerObject", SchedulerObject)
+        setattr(diffusers_udated, "SchedulerObject2", SchedulerObject2)
         logger = logging.get_logger("diffusers.configuration_utils")
 
         with tempfile.TemporaryDirectory() as tmpdirname:
@@ -185,11 +185,11 @@ class SchedulerBaseTests(unittest.TestCase):
         obj = SchedulerObject()
 
         # mock add obj class to `diffusers`
-        setattr(diffusers, "SchedulerObject", SchedulerObject)
-        setattr(diffusers, "SchedulerObject2", SchedulerObject2)
-        setattr(diffusers, "SchedulerObject3", SchedulerObject3)
+        setattr(diffusers_udated, "SchedulerObject", SchedulerObject)
+        setattr(diffusers_udated, "SchedulerObject2", SchedulerObject2)
+        setattr(diffusers_udated, "SchedulerObject3", SchedulerObject3)
         logger = logging.get_logger("diffusers.configuration_utils")
-        logger.setLevel(diffusers.logging.INFO)
+        logger.setLevel(diffusers_udated.logging.INFO)
 
         with tempfile.TemporaryDirectory() as tmpdirname:
             obj.save_config(tmpdirname)

@@ -40,10 +40,10 @@ from timm.data.transforms_factory import create_transform
 from torchvision import transforms
 from tqdm import tqdm
 
-from diffusers import VQModel
-from diffusers.optimization import get_scheduler
-from diffusers.training_utils import EMAModel
-from diffusers.utils import check_min_version, is_wandb_available
+from diffusers_udated import VQModel
+from diffusers_udated.optimization import get_scheduler
+from diffusers_udated.training_utils import EMAModel
+from diffusers_udated.utils import check_min_version, is_wandb_available
 
 
 if is_wandb_available():

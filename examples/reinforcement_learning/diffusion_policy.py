@@ -5,7 +5,7 @@ import torch.nn as nn
 from huggingface_hub import hf_hub_download
 from torch.serialization import add_safe_globals
 
-from diffusers import DDPMScheduler, UNet1DModel
+from diffusers_udated import DDPMScheduler, UNet1DModel
 
 
 add_safe_globals(

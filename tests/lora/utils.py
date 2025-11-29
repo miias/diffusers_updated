@@ -24,12 +24,12 @@ import pytest
 import torch
 from parameterized import parameterized
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     UNet2DConditionModel,
 )
-from diffusers.utils import logging
-from diffusers.utils.import_utils import is_peft_available
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.import_utils import is_peft_available
 
 from ..testing_utils import (
     CaptureLogger,
@@ -1996,8 +1996,8 @@ class PeftLoraLoaderMixinTests:
         self.assertTrue(not np.allclose(lora_output_diff_alpha, lora_output_same_rank, atol=1e-3, rtol=1e-3))
 
     def test_layerwise_casting_inference_denoiser(self):
-        from diffusers.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
-        from diffusers.hooks.layerwise_casting import DEFAULT_SKIP_MODULES_PATTERN
+        from diffusers_udated.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
+        from diffusers_udated.hooks.layerwise_casting import DEFAULT_SKIP_MODULES_PATTERN
 
         def check_linear_dtype(module, storage_dtype, compute_dtype):
             patterns_to_check = DEFAULT_SKIP_MODULES_PATTERN
@@ -2055,8 +2055,8 @@ class PeftLoraLoaderMixinTests:
         See the docstring of [`hooks.layerwise_casting.PeftInputAutocastDisableHook`] for more details.
         """
 
-        from diffusers.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
-        from diffusers.hooks.layerwise_casting import (
+        from diffusers_udated.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
+        from diffusers_udated.hooks.layerwise_casting import (
             _PEFT_AUTOCAST_DISABLE_HOOK,
             DEFAULT_SKIP_MODULES_PATTERN,
             apply_layerwise_casting,
@@ -2265,7 +2265,7 @@ class PeftLoraLoaderMixinTests:
             self.assertTrue(np.allclose(output_adapter_1, output_lora_loaded, atol=1e-3, rtol=1e-3))
 
     def _test_group_offloading_inference_denoiser(self, offload_type, use_stream):
-        from diffusers.hooks.group_offloading import _get_top_level_group_offload_hook
+        from diffusers_udated.hooks.group_offloading import _get_top_level_group_offload_hook
 
         onload_device = torch_device
         offload_device = torch.device("cpu")

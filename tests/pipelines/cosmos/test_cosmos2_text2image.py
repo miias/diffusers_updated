@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     Cosmos2TextToImagePipeline,
     CosmosTransformer3DModel,

@@ -19,9 +19,9 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import DDPMWuerstchenScheduler, StableCascadeCombinedPipeline
-from diffusers.models import StableCascadeUNet
-from diffusers.pipelines.wuerstchen import PaellaVQModel
+from diffusers_udated import DDPMWuerstchenScheduler, StableCascadeCombinedPipeline
+from diffusers_udated.models import StableCascadeUNet
+from diffusers_udated.pipelines.wuerstchen import PaellaVQModel
 
 from ...testing_utils import enable_full_determinism, require_torch_accelerator, torch_device
 from ..test_pipelines_common import PipelineTesterMixin

@@ -21,15 +21,15 @@ import regex as re
 import torch
 from transformers import AutoTokenizer, UMT5EncoderModel
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.loaders import WanLoraLoaderMixin
-from diffusers.models import AutoencoderKLWan, WanTransformer3DModel
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.wan.pipeline_output import WanPipelineOutput
-from diffusers.schedulers import FlowMatchEulerDiscreteScheduler
-from diffusers.utils import is_torch_xla_available, logging, replace_example_docstring
-from diffusers.utils.torch_utils import randn_tensor
-from diffusers.video_processor import VideoProcessor
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.loaders import WanLoraLoaderMixin
+from diffusers_udated.models import AutoencoderKLWan, WanTransformer3DModel
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.wan.pipeline_output import WanPipelineOutput
+from diffusers_udated.schedulers import FlowMatchEulerDiscreteScheduler
+from diffusers_udated.utils import is_torch_xla_available, logging, replace_example_docstring
+from diffusers_udated.utils.torch_utils import randn_tensor
+from diffusers_udated.video_processor import VideoProcessor
 
 
 if is_torch_xla_available():

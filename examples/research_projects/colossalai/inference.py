@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import StableDiffusionPipeline
+from diffusers_udated import StableDiffusionPipeline
 
 
 model_id = "path-to-your-trained-model"

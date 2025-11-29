@@ -19,7 +19,7 @@ import shutil
 import sys
 import tempfile
 
-from diffusers import DiffusionPipeline, SD3Transformer2DModel
+from diffusers_udated import DiffusionPipeline, SD3Transformer2DModel
 
 
 sys.path.append("..")

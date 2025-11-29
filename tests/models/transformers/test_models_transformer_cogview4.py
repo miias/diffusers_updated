@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import CogView4Transformer2DModel
+from diffusers_udated import CogView4Transformer2DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin

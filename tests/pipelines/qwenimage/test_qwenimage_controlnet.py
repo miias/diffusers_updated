@@ -18,7 +18,7 @@ import numpy as np
 import torch
 from transformers import Qwen2_5_VLConfig, Qwen2_5_VLForConditionalGeneration, Qwen2Tokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLQwenImage,
     FlowMatchEulerDiscreteScheduler,
     QwenImageControlNetModel,
@@ -26,8 +26,8 @@ from diffusers import (
     QwenImageMultiControlNetModel,
     QwenImageTransformer2DModel,
 )
-from diffusers.utils.testing_utils import enable_full_determinism, torch_device
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.testing_utils import enable_full_determinism, torch_device
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ..pipeline_params import TEXT_TO_IMAGE_PARAMS
 from ..test_pipelines_common import PipelineTesterMixin, to_np

@@ -39,7 +39,7 @@ from parameterized import parameterized
 from PIL import Image
 from transformers import CLIPImageProcessor, CLIPModel, CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     ConfigMixin,
     DDIMPipeline,
@@ -61,10 +61,10 @@ from diffusers import (
     UniPCMultistepScheduler,
     logging,
 )
-from diffusers.pipelines.pipeline_utils import _get_pipeline_class
-from diffusers.schedulers.scheduling_utils import SCHEDULER_CONFIG_NAME
-from diffusers.utils import CONFIG_NAME, WEIGHTS_NAME, is_transformers_version
-from diffusers.utils.torch_utils import is_compiled_module
+from diffusers_udated.pipelines.pipeline_utils import _get_pipeline_class
+from diffusers_udated.schedulers.scheduling_utils import SCHEDULER_CONFIG_NAME
+from diffusers_udated.utils import CONFIG_NAME, WEIGHTS_NAME, is_transformers_version
+from diffusers_udated.utils.torch_utils import is_compiled_module
 
 from ..testing_utils import (
     CaptureLogger,
@@ -2092,7 +2092,7 @@ class PipelineSlowTests(unittest.TestCase):
         )
         pipe_pt.to(torch_device)
 
-        from diffusers import FlaxStableDiffusionPipeline
+        from diffusers_udated import FlaxStableDiffusionPipeline
 
         with tempfile.TemporaryDirectory() as tmpdirname:
             pipe_pt.save_pretrained(tmpdirname)
@@ -2382,7 +2382,7 @@ class TestLoraHotSwappingForPipeline(unittest.TestCase):
 
     def test_enable_lora_hotswap_called_after_adapter_added_warns(self):
         # ensure that enable_lora_hotswap is called before loading the first adapter
-        from diffusers.loaders.peft import logger
+        from diffusers_udated.loaders.peft import logger
 
         lora_config = self.get_unet_lora_config(8, 8, target_modules=["to_q"])
         pipeline = StableDiffusionPipeline.from_pretrained("hf-internal-testing/tiny-sd-pipe").to(torch_device)
@@ -2415,7 +2415,7 @@ class TestLoraHotSwappingForPipeline(unittest.TestCase):
 
     def test_hotswap_second_adapter_targets_more_layers_raises(self):
         # check the error and log
-        from diffusers.loaders.peft import logger
+        from diffusers_udated.loaders.peft import logger
 
         # at the moment, PEFT requires the 2nd adapter to target the same or a subset of layers
         target_modules0 = ["to_q"]

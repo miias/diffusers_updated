@@ -7,14 +7,14 @@ import numpy as np
 import PIL.Image
 import torch
 
-from diffusers import StableDiffusionXLPipeline
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.image_processor import PipelineImageInput
-from diffusers.models.attention import BasicTransformerBlock
-from diffusers.models.unets.unet_2d_blocks import CrossAttnDownBlock2D, CrossAttnUpBlock2D, DownBlock2D, UpBlock2D
-from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
-from diffusers.utils import PIL_INTERPOLATION, deprecate, is_torch_xla_available, logging, replace_example_docstring
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated import StableDiffusionXLPipeline
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.image_processor import PipelineImageInput
+from diffusers_udated.models.attention import BasicTransformerBlock
+from diffusers_udated.models.unets.unet_2d_blocks import CrossAttnDownBlock2D, CrossAttnUpBlock2D, DownBlock2D, UpBlock2D
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
+from diffusers_udated.utils import PIL_INTERPOLATION, deprecate, is_torch_xla_available, logging, replace_example_docstring
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

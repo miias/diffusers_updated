@@ -18,7 +18,7 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DDIMPipeline, DDIMScheduler, UNet2DModel
+from diffusers_udated import DDIMPipeline, DDIMScheduler, UNet2DModel
 
 from ...testing_utils import enable_full_determinism, require_torch_accelerator, slow, torch_device
 from ..pipeline_params import UNCONDITIONAL_IMAGE_GENERATION_BATCH_PARAMS, UNCONDITIONAL_IMAGE_GENERATION_PARAMS

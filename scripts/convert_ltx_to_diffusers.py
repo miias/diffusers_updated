@@ -7,7 +7,7 @@ from accelerate import init_empty_weights
 from safetensors.torch import load_file
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLLTXVideo,
     FlowMatchEulerDiscreteScheduler,
     LTXConditionPipeline,
@@ -15,7 +15,7 @@ from diffusers import (
     LTXPipeline,
     LTXVideoTransformer3DModel,
 )
-from diffusers.pipelines.ltx.modeling_latent_upsampler import LTXLatentUpsamplerModel
+from diffusers_udated.pipelines.ltx.modeling_latent_upsampler import LTXLatentUpsamplerModel
 
 
 def remove_keys_(key: str, state_dict: Dict[str, Any]):

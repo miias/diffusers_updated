@@ -4,7 +4,7 @@ import unittest
 import torch
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DDPMScheduler,
@@ -12,7 +12,7 @@ from diffusers import (
     StableUnCLIPPipeline,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
+from diffusers_udated.pipelines.stable_diffusion.stable_unclip_image_normalizer import StableUnCLIPImageNormalizer
 
 from ...testing_utils import (
     backend_empty_cache,

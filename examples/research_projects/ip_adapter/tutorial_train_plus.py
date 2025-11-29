@@ -16,7 +16,7 @@ from PIL import Image
 from torchvision import transforms
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers import AutoencoderKL, DDPMScheduler, UNet2DConditionModel
+from diffusers_udated import AutoencoderKL, DDPMScheduler, UNet2DConditionModel
 
 
 if is_torch2_available():

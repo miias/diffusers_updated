@@ -9,7 +9,7 @@ from huggingface_hub import hf_hub_download
 from safetensors.torch import load_file
 from transformers import AutoProcessor, AutoTokenizer, CLIPVisionModelWithProjection, UMT5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     SkyReelsV2DiffusionForcingPipeline,
     SkyReelsV2ImageToVideoPipeline,

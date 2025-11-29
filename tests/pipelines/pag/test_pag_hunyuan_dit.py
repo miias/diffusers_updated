@@ -21,7 +21,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, BertModel, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDPMScheduler,
     HunyuanDiT2DModel,

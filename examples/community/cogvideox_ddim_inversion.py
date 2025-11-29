@@ -29,13 +29,13 @@ import torch.nn.functional as F
 import torchvision.transforms as T
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers.models.attention_processor import Attention, CogVideoXAttnProcessor2_0
-from diffusers.models.autoencoders import AutoencoderKLCogVideoX
-from diffusers.models.embeddings import apply_rotary_emb
-from diffusers.models.transformers.cogvideox_transformer_3d import CogVideoXBlock, CogVideoXTransformer3DModel
-from diffusers.pipelines.cogvideo.pipeline_cogvideox import CogVideoXPipeline, retrieve_timesteps
-from diffusers.schedulers import CogVideoXDDIMScheduler, DDIMInverseScheduler
-from diffusers.utils import export_to_video
+from diffusers_udated.models.attention_processor import Attention, CogVideoXAttnProcessor2_0
+from diffusers_udated.models.autoencoders import AutoencoderKLCogVideoX
+from diffusers_udated.models.embeddings import apply_rotary_emb
+from diffusers_udated.models.transformers.cogvideox_transformer_3d import CogVideoXBlock, CogVideoXTransformer3DModel
+from diffusers_udated.pipelines.cogvideo.pipeline_cogvideox import CogVideoXPipeline, retrieve_timesteps
+from diffusers_udated.schedulers import CogVideoXDDIMScheduler, DDIMInverseScheduler
+from diffusers_udated.utils import export_to_video
 
 
 # Must import after torch because this can sometimes lead to a nasty segmentation fault, or stack smashing error.

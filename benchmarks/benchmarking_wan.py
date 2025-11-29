@@ -3,8 +3,8 @@ from functools import partial
 import torch
 from benchmarking_utils import BenchmarkMixin, BenchmarkScenario, model_init_fn
 
-from diffusers import WanTransformer3DModel
-from diffusers.utils.testing_utils import torch_device
+from diffusers_udated import WanTransformer3DModel
+from diffusers_udated.utils.testing_utils import torch_device
 
 
 CKPT_ID = "Wan-AI/Wan2.1-T2V-14B-Diffusers"

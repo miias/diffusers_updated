@@ -22,28 +22,28 @@ from packaging import version
 from safetensors import safe_open
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers.configuration_utils import FrozenDict
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated.configuration_utils import FrozenDict
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     IPAdapterMixin,
     StableDiffusionLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.models.attention_processor import (
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import (
     AttnProcessor,
     AttnProcessor2_0,
     IPAdapterAttnProcessor,
     IPAdapterAttnProcessor2_0,
 )
-from diffusers.models.embeddings import MultiIPAdapterImageProjection
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion.pipeline_output import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.models.embeddings import MultiIPAdapterImageProjection
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion.pipeline_output import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     _get_model_file,
     deprecate,
@@ -51,7 +51,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
@@ -60,7 +60,7 @@ logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 class IPAdapterFullImageProjection(nn.Module):
     def __init__(self, image_embed_dim=1024, cross_attention_dim=1024, mult=1, num_tokens=1):
         super().__init__()
-        from diffusers.models.attention import FeedForward
+        from diffusers_udated.models.attention import FeedForward
 
         self.num_tokens = num_tokens
         self.cross_attention_dim = cross_attention_dim

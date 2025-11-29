@@ -4,7 +4,7 @@ from typing import Dict
 import torch
 import torch.nn as nn
 
-from diffusers import SparseControlNetModel
+from diffusers_udated import SparseControlNetModel
 
 
 KEYS_RENAME_MAPPING = {

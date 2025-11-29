@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from transformers import Gemma2Config, Gemma2Model, GemmaTokenizer
 
-from diffusers import AutoencoderDC, FlowMatchEulerDiscreteScheduler, SanaPipeline, SanaTransformer2DModel
+from diffusers_udated import AutoencoderDC, FlowMatchEulerDiscreteScheduler, SanaPipeline, SanaTransformer2DModel
 
 from ...testing_utils import (
     IS_GITHUB_ACTIONS,

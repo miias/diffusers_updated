@@ -4,7 +4,7 @@ from typing import Any, Iterable, List, Optional
 
 import torch
 
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 from .scheduler import BaseAsyncScheduler, async_retrieve_timesteps
 

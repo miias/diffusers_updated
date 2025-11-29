@@ -25,25 +25,25 @@ from einops import rearrange, repeat
 from gmflow.gmflow import GMFlow
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import StableDiffusionLoraLoaderMixin, TextualInversionLoaderMixin
-from diffusers.models import AutoencoderKL, ControlNetModel, ImageProjection, UNet2DConditionModel
-from diffusers.models.attention_processor import AttnProcessor2_0
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.models.unets.unet_2d_condition import UNet2DConditionOutput
-from diffusers.pipelines.controlnet.multicontrolnet import MultiControlNetModel
-from diffusers.pipelines.controlnet.pipeline_controlnet_img2img import StableDiffusionControlNetImg2ImgPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import StableDiffusionLoraLoaderMixin, TextualInversionLoaderMixin
+from diffusers_udated.models import AutoencoderKL, ControlNetModel, ImageProjection, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import AttnProcessor2_0
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.models.unets.unet_2d_condition import UNet2DConditionOutput
+from diffusers_udated.pipelines.controlnet.multicontrolnet import MultiControlNetModel
+from diffusers_udated.pipelines.controlnet.pipeline_controlnet_img2img import StableDiffusionControlNetImg2ImgPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     deprecate,
     logging,
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import is_compiled_module, randn_tensor
+from diffusers_udated.utils.torch_utils import is_compiled_module, randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

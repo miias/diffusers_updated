@@ -17,7 +17,7 @@ import unittest
 
 import numpy as np
 
-from diffusers import LMSDiscreteScheduler, OnnxStableDiffusionInpaintPipeline
+from diffusers_udated import LMSDiscreteScheduler, OnnxStableDiffusionInpaintPipeline
 
 from ...testing_utils import (
     is_onnx_available,

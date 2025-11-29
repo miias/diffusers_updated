@@ -3,8 +3,8 @@ from functools import partial
 import torch
 from benchmarking_utils import BenchmarkMixin, BenchmarkScenario, model_init_fn
 
-from diffusers import BitsAndBytesConfig, FluxTransformer2DModel
-from diffusers.utils.testing_utils import torch_device
+from diffusers_udated import BitsAndBytesConfig, FluxTransformer2DModel
+from diffusers_udated.utils.testing_utils import torch_device
 
 
 CKPT_ID = "black-forest-labs/FLUX.1-dev"

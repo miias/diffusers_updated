@@ -6,15 +6,15 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from diffusers.image_processor import PipelineImageInput
-from diffusers.models import AsymmetricAutoencoderKL, ImageProjection
-from diffusers.models.attention_processor import Attention, AttnProcessor
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion_inpaint import (
+from diffusers_udated.image_processor import PipelineImageInput
+from diffusers_udated.models import AsymmetricAutoencoderKL, ImageProjection
+from diffusers_udated.models.attention_processor import Attention, AttnProcessor
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.pipeline_stable_diffusion_inpaint import (
     StableDiffusionInpaintPipeline,
     retrieve_timesteps,
 )
-from diffusers.utils import deprecate
+from diffusers_udated.utils import deprecate
 
 
 class RASGAttnProcessor:

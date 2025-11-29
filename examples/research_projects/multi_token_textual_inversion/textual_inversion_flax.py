@@ -26,15 +26,15 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPImageProcessor, CLIPTokenizer, FlaxCLIPTextModel, set_seed
 
-from diffusers import (
+from diffusers_udated import (
     FlaxAutoencoderKL,
     FlaxDDPMScheduler,
     FlaxPNDMScheduler,
     FlaxStableDiffusionPipeline,
     FlaxUNet2DConditionModel,
 )
-from diffusers.pipelines.stable_diffusion import FlaxStableDiffusionSafetyChecker
-from diffusers.utils import check_min_version
+from diffusers_udated.pipelines.stable_diffusion import FlaxStableDiffusionSafetyChecker
+from diffusers_udated.utils import check_min_version
 
 
 if version.parse(version.parse(PIL.__version__).base_version) >= version.parse("9.1.0"):

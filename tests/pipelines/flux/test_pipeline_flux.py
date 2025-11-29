@@ -6,7 +6,7 @@ import torch
 from huggingface_hub import hf_hub_download
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FasterCacheConfig,
     FlowMatchEulerDiscreteScheduler,

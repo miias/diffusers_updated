@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from diffusers import (
+from diffusers_udated import (
     AuraFlowPipeline,
     AuraFlowTransformer2DModel,
     DiffusionPipeline,
@@ -20,7 +20,7 @@ from diffusers import (
     WanTransformer3DModel,
     WanVACETransformer3DModel,
 )
-from diffusers.utils import load_image
+from diffusers_udated.utils import load_image
 
 from ...testing_utils import (
     Expectations,
@@ -46,7 +46,7 @@ from ..test_torch_compile_utils import QuantCompileTests
 if is_gguf_available():
     import gguf
 
-    from diffusers.quantizers.gguf.utils import GGUFLinear, GGUFParameter
+    from diffusers_udated.quantizers.gguf.utils import GGUFLinear, GGUFParameter
 
 enable_full_determinism()
 
@@ -69,7 +69,7 @@ class GGUFCudaKernelsTests(unittest.TestCase):
         if torch_device != "cuda":
             self.skipTest("CUDA kernels test requires CUDA device")
 
-        from diffusers.quantizers.gguf.utils import GGUFLinear, can_use_cuda_kernels
+        from diffusers_udated.quantizers.gguf.utils import GGUFLinear, can_use_cuda_kernels
 
         if not can_use_cuda_kernels:
             self.skipTest("CUDA kernels not available (compute capability < 7 or kernels not installed)")

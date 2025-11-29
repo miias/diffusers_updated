@@ -21,8 +21,8 @@ import torch
 from parameterized import parameterized
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-import diffusers
-from diffusers import (
+import diffusers_udated
+from diffusers_udated import (
     AutoencoderKL,
     EulerDiscreteScheduler,
     LCMScheduler,
@@ -31,7 +31,7 @@ from diffusers import (
     T2IAdapter,
     UNet2DConditionModel,
 )
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 from ...testing_utils import (
     enable_full_determinism,
@@ -466,7 +466,7 @@ class StableDiffusionXLMultiAdapterPipelineFastTests(
         inputs = self.get_dummy_inputs(torch_device)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         for batch_size in batch_sizes:
@@ -511,7 +511,7 @@ class StableDiffusionXLMultiAdapterPipelineFastTests(
 
             assert output.shape[0] == batch_size
 
-        logger.setLevel(level=diffusers.logging.WARNING)
+        logger.setLevel(level=diffusers_udated.logging.WARNING)
 
     @unittest.skip("We test this functionality elsewhere already.")
     def test_save_load_optional_components(self):
@@ -572,7 +572,7 @@ class StableDiffusionXLMultiAdapterPipelineFastTests(
         inputs = self.get_dummy_inputs(torch_device)
 
         logger = logging.get_logger(pipe.__module__)
-        logger.setLevel(level=diffusers.logging.FATAL)
+        logger.setLevel(level=diffusers_udated.logging.FATAL)
 
         # batchify inputs
         batched_inputs = {}
@@ -612,7 +612,7 @@ class StableDiffusionXLMultiAdapterPipelineFastTests(
 
         output = pipe(**inputs)
 
-        logger.setLevel(level=diffusers.logging.WARNING)
+        logger.setLevel(level=diffusers_udated.logging.WARNING)
         if test_max_difference:
             if relax_max_difference:
                 # Taking the median of the largest <n> differences

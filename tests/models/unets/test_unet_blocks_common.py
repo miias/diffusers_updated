@@ -16,7 +16,7 @@ from typing import Tuple
 
 import torch
 
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     floats_tensor,

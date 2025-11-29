@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import DDIMScheduler
+from diffusers_udated import DDIMScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

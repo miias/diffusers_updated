@@ -20,7 +20,7 @@ import pytest
 import torch
 from transformers import AutoTokenizer, GemmaForCausalLM
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     Lumina2Pipeline,

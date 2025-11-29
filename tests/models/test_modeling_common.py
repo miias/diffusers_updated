@@ -39,16 +39,16 @@ from huggingface_hub import ModelCard, delete_repo, snapshot_download, try_to_lo
 from huggingface_hub.utils import HfHubHTTPError, is_jinja_available
 from parameterized import parameterized
 
-from diffusers.models import FluxTransformer2DModel, SD3Transformer2DModel, UNet2DConditionModel
-from diffusers.models.attention_processor import (
+from diffusers_udated.models import FluxTransformer2DModel, SD3Transformer2DModel, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import (
     AttnProcessor,
     AttnProcessor2_0,
     AttnProcessorNPU,
     XFormersAttnProcessor,
 )
-from diffusers.models.auto_model import AutoModel
-from diffusers.training_utils import EMAModel
-from diffusers.utils import (
+from diffusers_udated.models.auto_model import AutoModel
+from diffusers_udated.training_utils import EMAModel
+from diffusers_udated.utils import (
     SAFE_WEIGHTS_INDEX_NAME,
     WEIGHTS_INDEX_NAME,
     is_peft_available,
@@ -56,8 +56,8 @@ from diffusers.utils import (
     is_xformers_available,
     logging,
 )
-from diffusers.utils.hub_utils import _add_variant
-from diffusers.utils.torch_utils import get_torch_cuda_device_capability
+from diffusers_udated.utils.hub_utils import _add_variant
+from diffusers_udated.utils.torch_utils import get_torch_cuda_device_capability
 
 from ..others.test_utils import TOKEN, USER, is_staging_test
 from ..testing_utils import (
@@ -1128,7 +1128,7 @@ class ModelTesterMixin:
         from peft import LoraConfig
         from peft.utils import get_peft_model_state_dict
 
-        from diffusers.loaders.peft import PeftAdapterMixin
+        from diffusers_udated.loaders.peft import PeftAdapterMixin
 
         init_dict, inputs_dict = self.prepare_init_args_and_inputs_for_common()
         model = self.model_class(**init_dict).to(torch_device)
@@ -1183,7 +1183,7 @@ class ModelTesterMixin:
     def test_lora_wrong_adapter_name_raises_error(self):
         from peft import LoraConfig
 
-        from diffusers.loaders.peft import PeftAdapterMixin
+        from diffusers_udated.loaders.peft import PeftAdapterMixin
 
         init_dict, _ = self.prepare_init_args_and_inputs_for_common()
         model = self.model_class(**init_dict).to(torch_device)
@@ -1214,7 +1214,7 @@ class ModelTesterMixin:
     def test_lora_adapter_metadata_is_loaded_correctly(self, rank, lora_alpha, use_dora):
         from peft import LoraConfig
 
-        from diffusers.loaders.peft import PeftAdapterMixin
+        from diffusers_udated.loaders.peft import PeftAdapterMixin
 
         init_dict, _ = self.prepare_init_args_and_inputs_for_common()
         model = self.model_class(**init_dict).to(torch_device)
@@ -1250,8 +1250,8 @@ class ModelTesterMixin:
     def test_lora_adapter_wrong_metadata_raises_error(self):
         from peft import LoraConfig
 
-        from diffusers.loaders.lora_base import LORA_ADAPTER_METADATA_KEY
-        from diffusers.loaders.peft import PeftAdapterMixin
+        from diffusers_udated.loaders.lora_base import LORA_ADAPTER_METADATA_KEY
+        from diffusers_udated.loaders.peft import PeftAdapterMixin
 
         init_dict, _ = self.prepare_init_args_and_inputs_for_common()
         model = self.model_class(**init_dict).to(torch_device)
@@ -1621,8 +1621,8 @@ class ModelTesterMixin:
 
     @torch.no_grad()
     def test_layerwise_casting_inference(self):
-        from diffusers.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
-        from diffusers.hooks.layerwise_casting import DEFAULT_SKIP_MODULES_PATTERN
+        from diffusers_udated.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
+        from diffusers_udated.hooks.layerwise_casting import DEFAULT_SKIP_MODULES_PATTERN
 
         torch.manual_seed(0)
         config, inputs_dict = self.prepare_init_args_and_inputs_for_common()
@@ -2365,7 +2365,7 @@ class LoraHotSwappingForModelTesterMixin:
 
     def test_enable_lora_hotswap_called_after_adapter_added_warning(self):
         # ensure that enable_lora_hotswap is called before loading the first adapter
-        from diffusers.loaders.peft import logger
+        from diffusers_udated.loaders.peft import logger
 
         lora_config = self.get_lora_config(8, 8, target_modules=["to_q"])
         init_dict, inputs_dict = self.prepare_init_args_and_inputs_for_common()
@@ -2380,7 +2380,7 @@ class LoraHotSwappingForModelTesterMixin:
 
     def test_enable_lora_hotswap_called_after_adapter_added_ignore(self):
         # check possibility to ignore the error/warning
-        from diffusers.loaders.peft import logger
+        from diffusers_udated.loaders.peft import logger
 
         lora_config = self.get_lora_config(8, 8, target_modules=["to_q"])
         init_dict, inputs_dict = self.prepare_init_args_and_inputs_for_common()
@@ -2402,7 +2402,7 @@ class LoraHotSwappingForModelTesterMixin:
 
     def test_hotswap_second_adapter_targets_more_layers_raises(self):
         # check the error and log
-        from diffusers.loaders.peft import logger
+        from diffusers_udated.loaders.peft import logger
 
         # at the moment, PEFT requires the 2nd adapter to target the same or a subset of layers
         target_modules0 = ["to_q"]

@@ -17,9 +17,9 @@ import unittest
 
 import torch
 
-from diffusers import FluxTransformer2DModel
-from diffusers.models.attention_processor import FluxIPAdapterJointAttnProcessor2_0
-from diffusers.models.embeddings import ImageProjection
+from diffusers_udated import FluxTransformer2DModel
+from diffusers_udated.models.attention_processor import FluxIPAdapterJointAttnProcessor2_0
+from diffusers_udated.models.embeddings import ImageProjection
 
 from ...testing_utils import enable_full_determinism, is_peft_available, torch_device
 from ..test_modeling_common import LoraHotSwappingForModelTesterMixin, ModelTesterMixin, TorchCompileTesterMixin

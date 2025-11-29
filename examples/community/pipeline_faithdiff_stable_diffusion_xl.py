@@ -28,10 +28,10 @@ import torch.nn.functional as F
 import torch.utils.checkpoint
 from transformers import CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import UNet2DConditionModel as OriginalUNet2DConditionModel
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated import UNet2DConditionModel as OriginalUNet2DConditionModel
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     IPAdapterMixin,
     PeftAdapterMixin,
@@ -39,20 +39,20 @@ from diffusers.loaders import (
     TextualInversionLoaderMixin,
     UNet2DConditionLoadersMixin,
 )
-from diffusers.models import AutoencoderKL
-from diffusers.models.attention_processor import (
+from diffusers_udated.models import AutoencoderKL
+from diffusers_udated.models.attention_processor import (
     AttnProcessor2_0,
     FusedAttnProcessor2_0,
     LoRAAttnProcessor2_0,
     LoRAXFormersAttnProcessor,
     XFormersAttnProcessor,
 )
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.models.unets.unet_2d_blocks import UNetMidBlock2D, get_down_block
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
-from diffusers.schedulers import DDPMScheduler, KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.models.unets.unet_2d_blocks import UNetMidBlock2D, get_down_block
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
+from diffusers_udated.schedulers import DDPMScheduler, KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     deprecate,
     is_invisible_watermark_available,
@@ -63,12 +63,12 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.outputs import BaseOutput
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.outputs import BaseOutput
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_invisible_watermark_available():
-    from diffusers.pipelines.stable_diffusion_xl.watermark import StableDiffusionXLWatermarker
+    from diffusers_udated.pipelines.stable_diffusion_xl.watermark import StableDiffusionXLWatermarker
 
 if is_torch_xla_available():
     import torch_xla.core.xla_model as xm

@@ -2,7 +2,7 @@ import gc
 
 import torch
 
-from diffusers import StableDiffusionXLInstructPix2PixPipeline
+from diffusers_udated import StableDiffusionXLInstructPix2PixPipeline
 
 from ..testing_utils import (
     backend_empty_cache,

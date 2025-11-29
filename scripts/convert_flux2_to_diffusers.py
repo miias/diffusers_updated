@@ -8,8 +8,8 @@ from accelerate import init_empty_weights
 from huggingface_hub import hf_hub_download
 from transformers import AutoProcessor, GenerationConfig, Mistral3ForConditionalGeneration
 
-from diffusers import AutoencoderKLFlux2, FlowMatchEulerDiscreteScheduler, Flux2Pipeline, Flux2Transformer2DModel
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated import AutoencoderKLFlux2, FlowMatchEulerDiscreteScheduler, Flux2Pipeline, Flux2Transformer2DModel
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 
 """

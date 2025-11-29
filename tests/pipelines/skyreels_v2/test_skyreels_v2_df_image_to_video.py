@@ -22,7 +22,7 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     SkyReelsV2DiffusionForcingImageToVideoPipeline,
     SkyReelsV2Transformer3DModel,

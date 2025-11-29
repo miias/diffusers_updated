@@ -17,7 +17,7 @@ import unittest
 
 import numpy as np
 
-from diffusers import (
+from diffusers_udated import (
     KandinskyV22CombinedPipeline,
     KandinskyV22Img2ImgCombinedPipeline,
     KandinskyV22InpaintCombinedPipeline,

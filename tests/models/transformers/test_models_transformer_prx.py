@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers.models.transformers.transformer_prx import PRXTransformer2DModel
+from diffusers_udated.models.transformers.transformer_prx import PRXTransformer2DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin

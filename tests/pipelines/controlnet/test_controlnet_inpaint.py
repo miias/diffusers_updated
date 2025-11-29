@@ -25,17 +25,17 @@ import torch
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     ControlNetModel,
     DDIMScheduler,
     StableDiffusionControlNetInpaintPipeline,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.controlnet.pipeline_controlnet import MultiControlNetModel
-from diffusers.utils import load_image
-from diffusers.utils.import_utils import is_xformers_available
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.pipelines.controlnet.pipeline_controlnet import MultiControlNetModel
+from diffusers_udated.utils import load_image
+from diffusers_udated.utils.import_utils import is_xformers_available
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

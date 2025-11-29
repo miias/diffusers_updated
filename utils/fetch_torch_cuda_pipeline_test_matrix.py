@@ -6,7 +6,7 @@ from pathlib import Path
 
 from huggingface_hub import HfApi
 
-import diffusers
+import diffusers_udated
 
 
 PATH_TO_REPO = Path(__file__).parent.parent.resolve()
@@ -33,7 +33,7 @@ def filter_pipelines(usage_dict, usage_cutoff=10000):
         if usage < usage_cutoff:
             continue
 
-        is_diffusers_pipeline = hasattr(diffusers.pipelines, diffusers_object)
+        is_diffusers_pipeline = hasattr(diffusers_udated.pipelines, diffusers_object)
         if not is_diffusers_pipeline:
             continue
 
@@ -72,7 +72,7 @@ def fetch_pipeline_modules_to_test():
 
     test_modules = []
     for pipeline_name in pipeline_objects:
-        module = getattr(diffusers, pipeline_name)
+        module = getattr(diffusers_udated, pipeline_name)
 
         test_module = module.__module__.split(".")[-2].strip()
         test_modules.append(test_module)

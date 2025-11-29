@@ -51,12 +51,12 @@ class CopyCheckTester(unittest.TestCase):
         os.makedirs(os.path.join(self.diffusers_dir, "schedulers/"))
         check_copies.DIFFUSERS_PATH = self.diffusers_dir
         shutil.copy(
-            os.path.join(git_repo_path, "src/diffusers/schedulers/scheduling_ddpm.py"),
+            os.path.join(git_repo_path, "src/diffusers_updated/schedulers/scheduling_ddpm.py"),
             os.path.join(self.diffusers_dir, "schedulers/scheduling_ddpm.py"),
         )
 
     def tearDown(self):
-        check_copies.DIFFUSERS_PATH = "src/diffusers"
+        check_copies.DIFFUSERS_PATH = "src/diffusers_updated"
         shutil.rmtree(self.diffusers_dir)
 
     def check_copy_consistency(self, comment, class_name, class_code, overwrite_result=None):

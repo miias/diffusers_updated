@@ -28,8 +28,8 @@ import requests
 from numpy.linalg import norm
 from packaging import version
 
-from diffusers.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
-from diffusers.utils.import_utils import (
+from diffusers_udated.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
+from diffusers_udated.utils.import_utils import (
     BACKENDS_MAPPING,
     is_accelerate_available,
     is_bitsandbytes_available,
@@ -49,7 +49,7 @@ from diffusers.utils.import_utils import (
     is_torchsde_available,
     is_transformers_available,
 )
-from diffusers.utils.logging import get_logger
+from diffusers_udated.utils.logging import get_logger
 
 
 if is_torch_available():
@@ -119,7 +119,7 @@ if is_torch_available():
             mps_backend_registered = hasattr(torch.backends, "mps")
             torch_device = "mps" if (mps_backend_registered and torch.backends.mps.is_available()) else torch_device
 
-    from diffusers.utils.torch_utils import get_torch_cuda_device_capability
+    from diffusers_udated.utils.torch_utils import get_torch_cuda_device_capability
 
 
 def torch_all_close(a, b, *args, **kwargs):
@@ -1410,8 +1410,8 @@ else:
     DevicePropertiesUserDict = UserDict
 
 if is_torch_available():
-    from diffusers.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
-    from diffusers.hooks.group_offloading import (
+    from diffusers_udated.hooks._common import _GO_LC_SUPPORTED_PYTORCH_LAYERS
+    from diffusers_udated.hooks.group_offloading import (
         _GROUP_ID_LAZY_LEAF,
         _compute_group_hash,
         _find_parent_module_in_module_dict,

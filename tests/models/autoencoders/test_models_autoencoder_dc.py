@@ -15,7 +15,7 @@
 
 import unittest
 
-from diffusers import AutoencoderDC
+from diffusers_udated import AutoencoderDC
 
 from ...testing_utils import IS_GITHUB_ACTIONS, enable_full_determinism, floats_tensor, torch_device
 from ..test_modeling_common import ModelTesterMixin

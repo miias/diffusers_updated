@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from diffusers.pipelines.stable_diffusion_3 import StableDiffusion3Pipeline
+from diffusers_udated.pipelines.stable_diffusion_3 import StableDiffusion3Pipeline
 
 
 logger = logging.getLogger(__name__)

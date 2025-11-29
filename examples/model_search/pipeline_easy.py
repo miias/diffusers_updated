@@ -26,40 +26,40 @@ from huggingface_hub import hf_api, hf_hub_download
 from huggingface_hub.file_download import http_get
 from huggingface_hub.utils import validate_hf_hub_args
 
-from diffusers.loaders.single_file_utils import (
+from diffusers_udated.loaders.single_file_utils import (
     VALID_URL_PREFIXES,
     _extract_repo_id_and_weights_name,
     infer_diffusers_model_type,
     load_single_file_checkpoint,
 )
-from diffusers.pipelines.animatediff import AnimateDiffPipeline, AnimateDiffSDXLPipeline
-from diffusers.pipelines.auto_pipeline import (
+from diffusers_udated.pipelines.animatediff import AnimateDiffPipeline, AnimateDiffSDXLPipeline
+from diffusers_udated.pipelines.auto_pipeline import (
     AutoPipelineForImage2Image,
     AutoPipelineForInpainting,
     AutoPipelineForText2Image,
 )
-from diffusers.pipelines.controlnet import (
+from diffusers_udated.pipelines.controlnet import (
     StableDiffusionControlNetImg2ImgPipeline,
     StableDiffusionControlNetInpaintPipeline,
     StableDiffusionControlNetPipeline,
     StableDiffusionXLControlNetImg2ImgPipeline,
     StableDiffusionXLControlNetPipeline,
 )
-from diffusers.pipelines.flux import FluxImg2ImgPipeline, FluxPipeline
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import (
+from diffusers_udated.pipelines.flux import FluxImg2ImgPipeline, FluxPipeline
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import (
     StableDiffusionImg2ImgPipeline,
     StableDiffusionInpaintPipeline,
     StableDiffusionPipeline,
     StableDiffusionUpscalePipeline,
 )
-from diffusers.pipelines.stable_diffusion_3 import StableDiffusion3Img2ImgPipeline, StableDiffusion3Pipeline
-from diffusers.pipelines.stable_diffusion_xl import (
+from diffusers_udated.pipelines.stable_diffusion_3 import StableDiffusion3Img2ImgPipeline, StableDiffusion3Pipeline
+from diffusers_udated.pipelines.stable_diffusion_xl import (
     StableDiffusionXLImg2ImgPipeline,
     StableDiffusionXLInpaintPipeline,
     StableDiffusionXLPipeline,
 )
-from diffusers.utils import logging
+from diffusers_udated.utils import logging
 
 
 logger = logging.get_logger(__name__)

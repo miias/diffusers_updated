@@ -20,7 +20,7 @@ import shutil
 import sys
 import tempfile
 
-from diffusers import DiffusionPipeline, UNet2DConditionModel  # noqa: E402
+from diffusers_udated import DiffusionPipeline, UNet2DConditionModel  # noqa: E402
 
 
 sys.path.append("..")

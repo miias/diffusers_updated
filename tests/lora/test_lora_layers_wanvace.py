@@ -23,8 +23,8 @@ import torch
 from PIL import Image
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import AutoencoderKLWan, FlowMatchEulerDiscreteScheduler, WanVACEPipeline, WanVACETransformer3DModel
-from diffusers.utils.import_utils import is_peft_available
+from diffusers_udated import AutoencoderKLWan, FlowMatchEulerDiscreteScheduler, WanVACEPipeline, WanVACETransformer3DModel
+from diffusers_udated.utils.import_utils import is_peft_available
 
 from ..testing_utils import (
     floats_tensor,

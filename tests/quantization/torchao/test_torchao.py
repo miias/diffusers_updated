@@ -24,15 +24,15 @@ from packaging import version
 from parameterized import parameterized
 from transformers import AutoTokenizer, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     FluxPipeline,
     FluxTransformer2DModel,
     TorchAoConfig,
 )
-from diffusers.models.attention_processor import Attention
-from diffusers.quantizers import PipelineQuantizationConfig
+from diffusers_udated.models.attention_processor import Attention
+from diffusers_udated.quantizers import PipelineQuantizationConfig
 
 from ...testing_utils import (
     backend_empty_cache,

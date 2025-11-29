@@ -1,4 +1,4 @@
-from diffusers.utils import is_accelerate_available, logging
+from diffusers_udated.utils import is_accelerate_available, logging
 
 
 if is_accelerate_available():

@@ -2,7 +2,7 @@ import argparse
 
 import torch
 
-from diffusers import HunyuanDiT2DModel
+from diffusers_udated import HunyuanDiT2DModel
 
 
 def main(args):
@@ -209,7 +209,7 @@ def main(args):
 
     model.load_state_dict(state_dict)
 
-    from diffusers import HunyuanDiTPipeline
+    from diffusers_udated import HunyuanDiTPipeline
 
     if args.use_style_cond_and_image_meta_size:
         pipe = HunyuanDiTPipeline.from_pretrained(

@@ -63,7 +63,7 @@ from git import Repo
 
 PATH_TO_REPO = Path(__file__).parent.parent.resolve()
 PATH_TO_EXAMPLES = PATH_TO_REPO / "examples"
-PATH_TO_DIFFUSERS = PATH_TO_REPO / "src/diffusers"
+PATH_TO_DIFFUSERS = PATH_TO_REPO / "src/diffusers_updated"
 PATH_TO_TESTS = PATH_TO_REPO / "tests"
 
 # Ignore fixtures in tests folder

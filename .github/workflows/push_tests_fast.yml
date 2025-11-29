@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "src/diffusers/**.py"
+      - "src/diffusers_updated/**.py"
       - "examples/**.py"
       - "tests/**.py"
 

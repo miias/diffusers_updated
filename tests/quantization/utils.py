@@ -1,4 +1,4 @@
-from diffusers.utils import is_torch_available
+from diffusers_udated.utils import is_torch_available
 
 from ..testing_utils import (
     backend_empty_cache,

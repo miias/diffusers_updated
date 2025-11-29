@@ -21,15 +21,15 @@ import torch
 from huggingface_hub import hf_hub_download
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer, T5EncoderModel, T5TokenizerFast
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     FluxControlNetPipeline,
     FluxTransformer2DModel,
 )
-from diffusers.models import FluxControlNetModel
-from diffusers.utils import load_image
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.models import FluxControlNetModel
+from diffusers_udated.utils import load_image
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

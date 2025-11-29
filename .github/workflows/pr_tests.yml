@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - "src/diffusers/**.py"
+      - "src/diffusers_updated/**.py"
       - "benchmarks/**.py"
       - "examples/**.py"
       - "scripts/**.py"

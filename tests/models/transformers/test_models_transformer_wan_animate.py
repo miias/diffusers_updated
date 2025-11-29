@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import WanAnimateTransformer3DModel
+from diffusers_udated import WanAnimateTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

@@ -22,7 +22,7 @@ import os
 
 from safetensors.torch import load_file, save_file
 
-from diffusers.utils import convert_all_state_dict_to_peft, convert_state_dict_to_kohya
+from diffusers_udated.utils import convert_all_state_dict_to_peft, convert_state_dict_to_kohya
 
 
 def convert_and_save(input_lora, output_lora=None):

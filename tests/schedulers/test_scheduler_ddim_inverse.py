@@ -2,7 +2,7 @@ import unittest
 
 import torch
 
-from diffusers import DDIMInverseScheduler
+from diffusers_udated import DDIMInverseScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

@@ -19,14 +19,14 @@ import torch.nn as nn
 import torch.utils.checkpoint
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers.configuration_utils import register_to_config
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.models.autoencoders import AutoencoderKL
-from diffusers.models.unets.unet_2d_condition import UNet2DConditionModel, UNet2DConditionOutput
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipeline
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import USE_PEFT_BACKEND, deprecate, logging, scale_lora_layers, unscale_lora_layers
+from diffusers_udated.configuration_utils import register_to_config
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.models.autoencoders import AutoencoderKL
+from diffusers_udated.models.unets.unet_2d_condition import UNet2DConditionModel, UNet2DConditionOutput
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import USE_PEFT_BACKEND, deprecate, logging, scale_lora_layers, unscale_lora_layers
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

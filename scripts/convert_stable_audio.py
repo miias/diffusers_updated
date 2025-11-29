@@ -11,15 +11,15 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderOobleck,
     CosineDPMSolverMultistepScheduler,
     StableAudioDiTModel,
     StableAudioPipeline,
     StableAudioProjectionModel,
 )
-from diffusers.models.model_loading_utils import load_model_dict_into_meta
-from diffusers.utils import is_accelerate_available
+from diffusers_udated.models.model_loading_utils import load_model_dict_into_meta
+from diffusers_udated.utils import is_accelerate_available
 
 
 if is_accelerate_available():

@@ -3,12 +3,12 @@ import tempfile
 
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     StableDiffusionXLAdapterPipeline,
     T2IAdapter,
 )
-from diffusers.loaders.single_file_utils import _extract_repo_id_and_weights_name
-from diffusers.utils import load_image
+from diffusers_udated.loaders.single_file_utils import _extract_repo_id_and_weights_name
+from diffusers_udated.utils import load_image
 
 from ..testing_utils import (
     backend_empty_cache,

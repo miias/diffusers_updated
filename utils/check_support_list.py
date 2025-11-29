@@ -69,26 +69,26 @@ if __name__ == "__main__":
     checks = {
         "Attention Processors": {
             "doc_path": "docs/source/en/api/attnprocessor.md",
-            "src_path": "src/diffusers/models/attention_processor.py",
+            "src_path": "src/diffusers_updated/models/attention_processor.py",
             "doc_regex": r"\[\[autodoc\]\]\s([^\n]+)",
             "src_regex": r"class\s+(\w+Processor(?:\d*_?\d*))[:(]",
             "exclude_conditions": [lambda c: "LoRA" in c, lambda c: c == "Attention"],
         },
         "Image Processors": {
             "doc_path": "docs/source/en/api/image_processor.md",
-            "src_path": "src/diffusers/image_processor.py",
+            "src_path": "src/diffusers_updated/image_processor.py",
             "doc_regex": r"\[\[autodoc\]\]\s([^\n]+)",
             "src_regex": r"class\s+(\w+Processor(?:\d*_?\d*))[:(]",
         },
         "Activations": {
             "doc_path": "docs/source/en/api/activations.md",
-            "src_path": "src/diffusers/models/activations.py",
+            "src_path": "src/diffusers_updated/models/activations.py",
             "doc_regex": r"\[\[autodoc\]\]\s([^\n]+)",
             "src_regex": r"class\s+(\w+)\s*\(.*?nn\.Module.*?\):",
         },
         "Normalizations": {
             "doc_path": "docs/source/en/api/normalization.md",
-            "src_path": "src/diffusers/models/normalization.py",
+            "src_path": "src/diffusers_updated/models/normalization.py",
             "doc_regex": r"\[\[autodoc\]\]\s([^\n]+)",
             "src_regex": r"class\s+(\w+)\s*\(.*?nn\.Module.*?\):",
             "exclude_conditions": [

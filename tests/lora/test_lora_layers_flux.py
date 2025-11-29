@@ -26,8 +26,8 @@ from parameterized import parameterized
 from PIL import Image
 from transformers import AutoTokenizer, CLIPTextModel, CLIPTokenizer, T5EncoderModel
 
-from diffusers import FlowMatchEulerDiscreteScheduler, FluxControlPipeline, FluxPipeline, FluxTransformer2DModel
-from diffusers.utils import load_image, logging
+from diffusers_udated import FlowMatchEulerDiscreteScheduler, FluxControlPipeline, FluxPipeline, FluxTransformer2DModel
+from diffusers_udated.utils import load_image, logging
 
 from ..testing_utils import (
     CaptureLogger,

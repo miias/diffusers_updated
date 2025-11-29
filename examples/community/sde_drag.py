@@ -10,9 +10,9 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import AutoencoderKL, DiffusionPipeline, DPMSolverMultistepScheduler, UNet2DConditionModel
-from diffusers.loaders import AttnProcsLayers, StableDiffusionLoraLoaderMixin
-from diffusers.models.attention_processor import (
+from diffusers_udated import AutoencoderKL, DiffusionPipeline, DPMSolverMultistepScheduler, UNet2DConditionModel
+from diffusers_udated.loaders import AttnProcsLayers, StableDiffusionLoraLoaderMixin
+from diffusers_udated.models.attention_processor import (
     AttnAddedKVProcessor,
     AttnAddedKVProcessor2_0,
     LoRAAttnAddedKVProcessor,
@@ -20,7 +20,7 @@ from diffusers.models.attention_processor import (
     LoRAAttnProcessor2_0,
     SlicedAttnAddedKVProcessor,
 )
-from diffusers.optimization import get_scheduler
+from diffusers_udated.optimization import get_scheduler
 
 
 class SdeDragPipeline(DiffusionPipeline):

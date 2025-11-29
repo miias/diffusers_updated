@@ -10,7 +10,7 @@ from transformers import (
     WhisperProcessor,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DiffusionPipeline,
@@ -18,10 +18,10 @@ from diffusers import (
     PNDMScheduler,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.pipeline_utils import StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.utils import logging
+from diffusers_udated.pipelines.pipeline_utils import StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.utils import logging
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

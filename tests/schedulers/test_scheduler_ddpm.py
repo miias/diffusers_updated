@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import DDPMScheduler
+from diffusers_udated import DDPMScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

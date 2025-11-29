@@ -20,7 +20,7 @@ import torch
 from datasets import load_dataset
 from parameterized import parameterized
 
-from diffusers import AutoencoderOobleck
+from diffusers_udated import AutoencoderOobleck
 
 from ...testing_utils import (
     backend_empty_cache,

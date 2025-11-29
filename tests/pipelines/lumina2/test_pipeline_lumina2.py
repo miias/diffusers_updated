@@ -3,7 +3,7 @@ import unittest
 import torch
 from transformers import AutoTokenizer, Gemma2Config, Gemma2Model
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     Lumina2Pipeline,

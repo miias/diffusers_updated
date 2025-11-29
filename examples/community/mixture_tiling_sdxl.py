@@ -23,23 +23,23 @@ from transformers import (
     CLIPTokenizer,
 )
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     StableDiffusionXLLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.models.attention_processor import (
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import (
     AttnProcessor2_0,
     FusedAttnProcessor2_0,
     XFormersAttnProcessor,
 )
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
-from diffusers.schedulers import KarrasDiffusionSchedulers, LMSDiscreteScheduler
-from diffusers.utils import (
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers, LMSDiscreteScheduler
+from diffusers_udated.utils import (
     USE_PEFT_BACKEND,
     is_invisible_watermark_available,
     is_torch_xla_available,
@@ -48,7 +48,7 @@ from diffusers.utils import (
     scale_lora_layers,
     unscale_lora_layers,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 try:
@@ -57,7 +57,7 @@ except ImportError:
     raise ImportError("Please install transformers and ligo-segments to use the mixture pipeline")
 
 if is_invisible_watermark_available():
-    from diffusers.pipelines.stable_diffusion_xl.watermark import StableDiffusionXLWatermarker
+    from diffusers_udated.pipelines.stable_diffusion_xl.watermark import StableDiffusionXLWatermarker
 
 if is_torch_xla_available():
     import torch_xla.core.xla_model as xm

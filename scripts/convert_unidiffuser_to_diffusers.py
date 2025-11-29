@@ -14,7 +14,7 @@ from transformers import (
     GPT2Tokenizer,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DPMSolverMultistepScheduler,
     UniDiffuserModel,

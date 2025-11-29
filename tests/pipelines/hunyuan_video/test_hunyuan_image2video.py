@@ -30,7 +30,7 @@ from transformers import (
 )
 from transformers.models.clip import CLIPVisionConfig
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLHunyuanVideo,
     FlowMatchEulerDiscreteScheduler,
     HunyuanVideoImageToVideoPipeline,

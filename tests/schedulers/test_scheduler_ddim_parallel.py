@@ -14,7 +14,7 @@
 
 import torch
 
-from diffusers import DDIMParallelScheduler
+from diffusers_udated import DDIMParallelScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

@@ -15,7 +15,7 @@ from transformers import (
     UMT5EncoderModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     UniPCMultistepScheduler,
     WanAnimatePipeline,

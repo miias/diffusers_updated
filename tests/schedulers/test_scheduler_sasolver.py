@@ -1,6 +1,6 @@
 import torch
 
-from diffusers import SASolverScheduler
+from diffusers_udated import SASolverScheduler
 
 from ..testing_utils import require_torchsde, torch_device
 from .test_schedulers import SchedulerCommonTest

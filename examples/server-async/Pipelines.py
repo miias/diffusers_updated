@@ -6,7 +6,7 @@ from typing import List
 import torch
 from pydantic import BaseModel
 
-from diffusers.pipelines.stable_diffusion_3.pipeline_stable_diffusion_3 import StableDiffusion3Pipeline
+from diffusers_udated.pipelines.stable_diffusion_3.pipeline_stable_diffusion_3 import StableDiffusion3Pipeline
 
 
 logger = logging.getLogger(__name__)

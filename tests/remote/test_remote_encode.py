@@ -18,8 +18,8 @@ import unittest
 import PIL.Image
 import torch
 
-from diffusers.utils import load_image
-from diffusers.utils.constants import (
+from diffusers_udated.utils import load_image
+from diffusers_udated.utils.constants import (
     DECODE_ENDPOINT_FLUX,
     DECODE_ENDPOINT_SD_V1,
     DECODE_ENDPOINT_SD_XL,
@@ -27,7 +27,7 @@ from diffusers.utils.constants import (
     ENCODE_ENDPOINT_SD_V1,
     ENCODE_ENDPOINT_SD_XL,
 )
-from diffusers.utils.remote_utils import (
+from diffusers_udated.utils.remote_utils import (
     remote_decode,
     remote_encode,
 )

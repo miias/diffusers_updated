@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import Flux2Transformer2DModel, attention_backend
+from diffusers_udated import Flux2Transformer2DModel, attention_backend
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import LoraHotSwappingForModelTesterMixin, ModelTesterMixin, TorchCompileTesterMixin

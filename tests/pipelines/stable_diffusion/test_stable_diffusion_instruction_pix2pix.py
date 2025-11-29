@@ -22,7 +22,7 @@ import torch
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     EulerAncestralDiscreteScheduler,
@@ -31,7 +31,7 @@ from diffusers import (
     StableDiffusionInstructPix2PixPipeline,
     UNet2DConditionModel,
 )
-from diffusers.image_processor import VaeImageProcessor
+from diffusers_udated.image_processor import VaeImageProcessor
 
 from ...testing_utils import (
     backend_empty_cache,

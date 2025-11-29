@@ -24,14 +24,14 @@ from transformers import (
     T5Tokenizer,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderOobleck,
     CosineDPMSolverMultistepScheduler,
     StableAudioDiTModel,
     StableAudioPipeline,
     StableAudioProjectionModel,
 )
-from diffusers.utils import is_xformers_available
+from diffusers_udated.utils import is_xformers_available
 
 from ...testing_utils import (
     Expectations,

@@ -19,7 +19,7 @@ import numpy as np
 import torch
 from transformers import Gemma2Config, Gemma2ForCausalLM, GemmaTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderDC,
     FlowMatchEulerDiscreteScheduler,
     SanaPAGPipeline,

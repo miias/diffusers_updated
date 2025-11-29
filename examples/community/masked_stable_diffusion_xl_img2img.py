@@ -4,20 +4,20 @@ import numpy as np
 import torch
 from PIL import Image, ImageFilter
 
-from diffusers.image_processor import PipelineImageInput
-from diffusers.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
-from diffusers.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl_img2img import (
+from diffusers_udated.image_processor import PipelineImageInput
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_output import StableDiffusionXLPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl_img2img import (
     StableDiffusionXLImg2ImgPipeline,
     rescale_noise_cfg,
     retrieve_latents,
     retrieve_timesteps,
 )
-from diffusers.utils import (
+from diffusers_udated.utils import (
     deprecate,
     is_torch_xla_available,
     logging,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

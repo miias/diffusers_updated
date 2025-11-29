@@ -5,8 +5,8 @@ import numpy as np
 import pytest
 import torch
 
-from diffusers import DiffusionPipeline
-from diffusers.models.attention_processor import Attention, AttnAddedKVProcessor
+from diffusers_udated import DiffusionPipeline
+from diffusers_udated.models.attention_processor import Attention, AttnAddedKVProcessor
 
 from ..testing_utils import torch_device
 

@@ -15,7 +15,7 @@
 
 import unittest
 
-from diffusers import AutoencoderKLTemporalDecoder
+from diffusers_udated import AutoencoderKLTemporalDecoder
 
 from ...testing_utils import (
     enable_full_determinism,

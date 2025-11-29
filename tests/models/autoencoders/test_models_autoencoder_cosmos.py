@@ -14,7 +14,7 @@
 
 import unittest
 
-from diffusers import AutoencoderKLCosmos
+from diffusers_udated import AutoencoderKLCosmos
 
 from ...testing_utils import enable_full_determinism, floats_tensor, torch_device
 from ..test_modeling_common import ModelTesterMixin

@@ -26,7 +26,7 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     FlowMatchEulerDiscreteScheduler,
     WanAnimatePipeline,

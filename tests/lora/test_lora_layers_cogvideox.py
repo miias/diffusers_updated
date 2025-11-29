@@ -19,7 +19,7 @@ import torch
 from parameterized import parameterized
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLCogVideoX,
     CogVideoXDPMScheduler,
     CogVideoXPipeline,

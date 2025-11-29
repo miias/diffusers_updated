@@ -41,15 +41,15 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPTokenizer, FlaxCLIPTextModel, set_seed
 
-from diffusers import (
+from diffusers_udated import (
     FlaxAutoencoderKL,
     FlaxControlNetModel,
     FlaxDDPMScheduler,
     FlaxStableDiffusionControlNetPipeline,
     FlaxUNet2DConditionModel,
 )
-from diffusers.utils import check_min_version, is_wandb_available, make_image_grid
-from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_card
+from diffusers_udated.utils import check_min_version, is_wandb_available, make_image_grid
+from diffusers_udated.utils.hub_utils import load_or_create_model_card, populate_model_card
 
 
 # To prevent an error that occurs when there are abnormally large compressed data chunk in the png image

@@ -21,7 +21,7 @@ import torch
 from parameterized import parameterized
 from transformers import AutoTokenizer, GlmModel
 
-from diffusers import AutoencoderKL, CogView4Pipeline, CogView4Transformer2DModel, FlowMatchEulerDiscreteScheduler
+from diffusers_udated import AutoencoderKL, CogView4Pipeline, CogView4Transformer2DModel, FlowMatchEulerDiscreteScheduler
 
 from ..testing_utils import (
     floats_tensor,

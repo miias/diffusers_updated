@@ -20,7 +20,7 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DDIMScheduler, KandinskyV22Pipeline, KandinskyV22PriorPipeline, UNet2DConditionModel, VQModel
+from diffusers_udated import DDIMScheduler, KandinskyV22Pipeline, KandinskyV22PriorPipeline, UNet2DConditionModel, VQModel
 
 from ...testing_utils import (
     backend_empty_cache,

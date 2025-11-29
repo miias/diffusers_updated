@@ -23,15 +23,15 @@ import torchvision.transforms as T
 from gmflow.gmflow import GMFlow
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.models import AutoencoderKL, ControlNetModel, UNet2DConditionModel
-from diffusers.models.attention_processor import Attention, AttnProcessor
-from diffusers.pipelines.controlnet.multicontrolnet import MultiControlNetModel
-from diffusers.pipelines.controlnet.pipeline_controlnet_img2img import StableDiffusionControlNetImg2ImgPipeline
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import BaseOutput, deprecate, is_torch_xla_available, logging
-from diffusers.utils.torch_utils import is_compiled_module, randn_tensor
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.models import AutoencoderKL, ControlNetModel, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import Attention, AttnProcessor
+from diffusers_udated.pipelines.controlnet.multicontrolnet import MultiControlNetModel
+from diffusers_udated.pipelines.controlnet.pipeline_controlnet_img2img import StableDiffusionControlNetImg2ImgPipeline
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import BaseOutput, deprecate, is_torch_xla_available, logging
+from diffusers_udated.utils.torch_utils import is_compiled_module, randn_tensor
 
 
 if is_torch_xla_available():

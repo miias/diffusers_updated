@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import Lumina2Transformer2DModel
+from diffusers_udated import Lumina2Transformer2DModel
 
 from ...testing_utils import (
     enable_full_determinism,

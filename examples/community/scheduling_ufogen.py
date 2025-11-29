@@ -21,10 +21,10 @@ from typing import List, Optional, Tuple, Union
 import numpy as np
 import torch
 
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.schedulers.scheduling_utils import SchedulerMixin
-from diffusers.utils import BaseOutput
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.configuration_utils import ConfigMixin, register_to_config
+from diffusers_udated.schedulers.scheduling_utils import SchedulerMixin
+from diffusers_udated.utils import BaseOutput
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 @dataclass

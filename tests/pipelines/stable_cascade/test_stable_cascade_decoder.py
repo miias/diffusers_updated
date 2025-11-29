@@ -20,10 +20,10 @@ import numpy as np
 import torch
 from transformers import CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers import DDPMWuerstchenScheduler, StableCascadeDecoderPipeline
-from diffusers.models import StableCascadeUNet
-from diffusers.pipelines.wuerstchen import PaellaVQModel
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated import DDPMWuerstchenScheduler, StableCascadeDecoderPipeline
+from diffusers_udated.models import StableCascadeUNet
+from diffusers_udated.pipelines.wuerstchen import PaellaVQModel
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     backend_empty_cache,

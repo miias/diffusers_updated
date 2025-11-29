@@ -7,7 +7,7 @@ from accelerate import init_empty_weights
 from huggingface_hub import snapshot_download
 from transformers import T5EncoderModel, T5TokenizerFast
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLCosmos,
     AutoencoderKLWan,
     Cosmos2TextToImagePipeline,

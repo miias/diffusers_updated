@@ -18,9 +18,9 @@ import PIL.Image
 import torch
 from torchvision import transforms
 
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
-from diffusers.schedulers import DDIMScheduler
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
+from diffusers_udated.schedulers import DDIMScheduler
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 trans = transforms.Compose(

@@ -1,4 +1,4 @@
-from diffusers import (
+from diffusers_udated import (
     SanaTransformer2DModel,
 )
 

@@ -25,23 +25,23 @@ from transformers import (
     T5EncoderModel,
 )
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.models import AutoencoderKL, HunyuanDiT2DModel
-from diffusers.models.embeddings import get_2d_rotary_pos_embed
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import (
+from diffusers_udated.callbacks import MultiPipelineCallbacks, PipelineCallback
+from diffusers_udated.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers_udated.models import AutoencoderKL, HunyuanDiT2DModel
+from diffusers_udated.models.embeddings import get_2d_rotary_pos_embed
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers_udated.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.pipelines.stable_diffusion.safety_checker import (
     StableDiffusionSafetyChecker,
 )
-from diffusers.schedulers import DDPMScheduler
-from diffusers.utils import (
+from diffusers_udated.schedulers import DDPMScheduler
+from diffusers_udated.utils import (
     deprecate,
     is_torch_xla_available,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_torch_xla_available():

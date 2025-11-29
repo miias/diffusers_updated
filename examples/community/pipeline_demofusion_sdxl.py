@@ -9,29 +9,29 @@ import torch
 import torch.nn.functional as F
 from transformers import CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import (
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.loaders import (
     FromSingleFileMixin,
     StableDiffusionLoraLoaderMixin,
     TextualInversionLoaderMixin,
 )
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.models.attention_processor import AttnProcessor2_0, XFormersAttnProcessor
-from diffusers.models.lora import adjust_lora_scale_text_encoder
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
+from diffusers_udated.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_udated.models.attention_processor import AttnProcessor2_0, XFormersAttnProcessor
+from diffusers_udated.models.lora import adjust_lora_scale_text_encoder
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.schedulers import KarrasDiffusionSchedulers
+from diffusers_udated.utils import (
     is_accelerate_available,
     is_accelerate_version,
     is_invisible_watermark_available,
     logging,
     replace_example_docstring,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 if is_invisible_watermark_available():
-    from diffusers.pipelines.stable_diffusion_xl.watermark import (
+    from diffusers_udated.pipelines.stable_diffusion_xl.watermark import (
         StableDiffusionXLWatermarker,
     )
 

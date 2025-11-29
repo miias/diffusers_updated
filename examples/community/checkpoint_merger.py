@@ -7,9 +7,9 @@ import torch
 from huggingface_hub import snapshot_download
 from huggingface_hub.utils import validate_hf_hub_args
 
-from diffusers import DiffusionPipeline, __version__
-from diffusers.schedulers.scheduling_utils import SCHEDULER_CONFIG_NAME
-from diffusers.utils import CONFIG_NAME, ONNX_WEIGHTS_NAME, WEIGHTS_NAME
+from diffusers_udated import DiffusionPipeline, __version__
+from diffusers_udated.schedulers.scheduling_utils import SCHEDULER_CONFIG_NAME
+from diffusers_udated.utils import CONFIG_NAME, ONNX_WEIGHTS_NAME, WEIGHTS_NAME
 
 
 class CheckpointMergerPipeline(DiffusionPipeline):

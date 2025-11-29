@@ -22,7 +22,7 @@ import subprocess
 
 # All paths are set with the intent you should run this script from the root of the repo with the command
 # python utils/check_copies.py
-DIFFUSERS_PATH = "src/diffusers"
+DIFFUSERS_PATH = "src/diffusers_updated"
 REPO_PATH = "."
 
 

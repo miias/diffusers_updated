@@ -20,7 +20,7 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     DDIMScheduler,
     KandinskyV22ControlnetPipeline,
     KandinskyV22PriorPipeline,

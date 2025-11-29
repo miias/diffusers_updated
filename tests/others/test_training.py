@@ -17,8 +17,8 @@ import unittest
 
 import torch
 
-from diffusers import DDIMScheduler, DDPMScheduler, UNet2DModel
-from diffusers.training_utils import set_seed
+from diffusers_udated import DDIMScheduler, DDPMScheduler, UNet2DModel
+from diffusers_udated.training_utils import set_seed
 
 from ..testing_utils import slow
 

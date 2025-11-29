@@ -35,7 +35,7 @@ import safetensors.torch
 import torch
 from huggingface_hub import hf_hub_download
 
-from diffusers import SD3ControlNetModel
+from diffusers_udated import SD3ControlNetModel
 
 
 parser = argparse.ArgumentParser()

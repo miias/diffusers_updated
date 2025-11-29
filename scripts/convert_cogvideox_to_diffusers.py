@@ -4,7 +4,7 @@ from typing import Any, Dict
 import torch
 from transformers import T5EncoderModel, T5Tokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLCogVideoX,
     CogVideoXDDIMScheduler,
     CogVideoXImageToVideoPipeline,

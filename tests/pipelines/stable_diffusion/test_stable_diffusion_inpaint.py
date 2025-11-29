@@ -23,7 +23,7 @@ from huggingface_hub import hf_hub_download
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AsymmetricAutoencoderKL,
     AutoencoderKL,
     DDIMScheduler,

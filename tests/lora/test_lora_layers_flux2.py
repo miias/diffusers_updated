@@ -19,7 +19,7 @@ import numpy as np
 import torch
 from transformers import AutoProcessor, Mistral3ForConditionalGeneration
 
-from diffusers import AutoencoderKLFlux2, FlowMatchEulerDiscreteScheduler, Flux2Pipeline, Flux2Transformer2DModel
+from diffusers_udated import AutoencoderKLFlux2, FlowMatchEulerDiscreteScheduler, Flux2Pipeline, Flux2Transformer2DModel
 
 from ..testing_utils import floats_tensor, require_peft_backend, torch_device
 

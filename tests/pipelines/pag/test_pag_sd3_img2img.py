@@ -7,7 +7,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     AutoPipelineForImage2Image,
     FlowMatchEulerDiscreteScheduler,

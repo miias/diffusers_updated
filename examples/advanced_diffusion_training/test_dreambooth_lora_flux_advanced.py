@@ -21,7 +21,7 @@ import tempfile
 
 import safetensors
 
-from diffusers.loaders.lora_base import LORA_ADAPTER_METADATA_KEY
+from diffusers_udated.loaders.lora_base import LORA_ADAPTER_METADATA_KEY
 
 
 sys.path.append("..")

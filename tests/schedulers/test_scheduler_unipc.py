@@ -2,7 +2,7 @@ import tempfile
 
 import torch
 
-from diffusers import (
+from diffusers_udated import (
     DEISMultistepScheduler,
     DPMSolverMultistepScheduler,
     DPMSolverSinglestepScheduler,

@@ -11,16 +11,16 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     DiffusionPipeline,
     ImagePipelineOutput,
     UnCLIPScheduler,
     UNet2DConditionModel,
     UNet2DModel,
 )
-from diffusers.pipelines.unclip import UnCLIPTextProjModel
-from diffusers.utils import logging
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.pipelines.unclip import UnCLIPTextProjModel
+from diffusers_udated.utils import logging
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name

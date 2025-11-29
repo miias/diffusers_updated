@@ -19,7 +19,7 @@ import numpy as np
 import torch
 from transformers import Gemma2Config, Gemma2Model, GemmaTokenizer
 
-from diffusers import AutoencoderDC, SanaSprintPipeline, SanaTransformer2DModel, SCMScheduler
+from diffusers_udated import AutoencoderDC, SanaSprintPipeline, SanaTransformer2DModel, SCMScheduler
 
 from ...testing_utils import IS_GITHUB_ACTIONS, enable_full_determinism, torch_device
 from ..pipeline_params import TEXT_TO_IMAGE_BATCH_PARAMS, TEXT_TO_IMAGE_IMAGE_PARAMS, TEXT_TO_IMAGE_PARAMS

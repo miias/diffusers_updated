@@ -27,14 +27,14 @@ import torch
 from tqdm import tqdm
 from transformers import GlmModel, PreTrainedTokenizerFast
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     CogView4ControlPipeline,
     CogView4Pipeline,
     CogView4Transformer2DModel,
     FlowMatchEulerDiscreteScheduler,
 )
-from diffusers.loaders.single_file_utils import convert_ldm_vae_checkpoint
+from diffusers_udated.loaders.single_file_utils import convert_ldm_vae_checkpoint
 
 
 parser = argparse.ArgumentParser()

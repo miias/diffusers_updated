@@ -20,8 +20,8 @@ import numpy as np
 import PIL
 import torch
 
-from diffusers.image_processor import VaeImageProcessor
-from diffusers.modular_pipelines import (
+from diffusers_udated.image_processor import VaeImageProcessor
+from diffusers_udated.modular_pipelines import (
     FluxAutoBlocks,
     FluxKontextAutoBlocks,
     FluxKontextModularPipeline,

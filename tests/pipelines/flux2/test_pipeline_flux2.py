@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from transformers import AutoProcessor, Mistral3Config, Mistral3ForConditionalGeneration
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLFlux2,
     FlowMatchEulerDiscreteScheduler,
     Flux2Pipeline,

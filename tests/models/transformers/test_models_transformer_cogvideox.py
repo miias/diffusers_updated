@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import CogVideoXTransformer3DModel
+from diffusers_udated import CogVideoXTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

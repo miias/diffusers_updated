@@ -19,14 +19,14 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, CLIPTextConfig, CLIPTextModelWithProjection, CLIPTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     FlowMatchEulerDiscreteScheduler,
     SD3Transformer2DModel,
     StableDiffusion3ControlNetInpaintingPipeline,
 )
-from diffusers.models import SD3ControlNetModel
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.models import SD3ControlNetModel
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     enable_full_determinism,

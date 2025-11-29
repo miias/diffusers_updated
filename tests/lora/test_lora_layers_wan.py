@@ -18,7 +18,7 @@ import unittest
 import torch
 from transformers import AutoTokenizer, T5EncoderModel
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     FlowMatchEulerDiscreteScheduler,
     WanPipeline,

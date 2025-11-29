@@ -11,7 +11,7 @@ from huggingface_hub import hf_hub_download, snapshot_download
 from termcolor import colored
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLWan,
     DPMSolverMultistepScheduler,
     FlowMatchEulerDiscreteScheduler,
@@ -19,7 +19,7 @@ from diffusers import (
     SanaVideoTransformer3DModel,
     UniPCMultistepScheduler,
 )
-from diffusers.utils.import_utils import is_accelerate_available
+from diffusers_udated.utils.import_utils import is_accelerate_available
 
 
 CTX = init_empty_weights if is_accelerate_available else nullcontext

@@ -30,7 +30,7 @@ from transformers import (
     DPTImageProcessor,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     PNDMScheduler,
     StableDiffusionDepth2ImgPipeline,

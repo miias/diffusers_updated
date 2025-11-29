@@ -5,7 +5,7 @@ import torch
 from safetensors.torch import load_file
 from transformers import AutoModel, AutoTokenizer
 
-from diffusers import AutoencoderKL, FlowMatchEulerDiscreteScheduler, LuminaNextDiT2DModel, LuminaPipeline
+from diffusers_udated import AutoencoderKL, FlowMatchEulerDiscreteScheduler, LuminaNextDiT2DModel, LuminaPipeline
 
 
 def main(args):

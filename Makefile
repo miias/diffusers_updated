@@ -21,7 +21,7 @@ deps_table_update:
 	@python setup.py deps_table_update
 
 deps_table_check_updated:
-	@md5sum src/diffusers/dependency_versions_table.py > md5sum.saved
+	@md5sum src/diffusers_updated/dependency_versions_table.py > md5sum.saved
 	@python setup.py deps_table_update
 	@md5sum -c --quiet md5sum.saved || (printf "\nError: the version dependency table is outdated.\nPlease run 'make fixup' or 'make style' and commit the changes.\n\n" && exit 1)
 	@rm md5sum.saved
@@ -42,7 +42,7 @@ repo-consistency:
 quality:
 	ruff check $(check_dirs) setup.py
 	ruff format --check $(check_dirs) setup.py
-	doc-builder style src/diffusers docs/source --max_len 119 --check_only
+	doc-builder style src/diffusers_updated docs/source --max_len 119 --check_only
 	python utils/check_doc_toc.py
 
 # Format source code automatically and check is there are any problems left that need manual fixing
@@ -56,7 +56,7 @@ extra_style_checks:
 style:
 	ruff check $(check_dirs) setup.py --fix
 	ruff format $(check_dirs) setup.py
-	doc-builder style src/diffusers docs/source --max_len 119
+	doc-builder style src/diffusers_updated docs/source --max_len 119
 	${MAKE} autogenerate_code
 	${MAKE} extra_style_checks
 

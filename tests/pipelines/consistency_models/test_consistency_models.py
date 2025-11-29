@@ -5,12 +5,12 @@ import numpy as np
 import torch
 from torch.backends.cuda import sdp_kernel
 
-from diffusers import (
+from diffusers_udated import (
     CMStochasticIterativeScheduler,
     ConsistencyModelPipeline,
     UNet2DModel,
 )
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 from ...testing_utils import (
     Expectations,

@@ -5,15 +5,15 @@ import requests
 import torch
 import yaml
 
-from diffusers import AutoencoderKL
-from diffusers.pipelines.stable_diffusion.convert_from_ckpt import (
+from diffusers_udated import AutoencoderKL
+from diffusers_udated.pipelines.stable_diffusion.convert_from_ckpt import (
     assign_to_checkpoint,
     conv_attn_to_linear,
     create_vae_diffusers_config,
     renew_vae_attention_paths,
     renew_vae_resnet_paths,
 )
-from diffusers.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
+from diffusers_udated.utils.constants import DIFFUSERS_REQUEST_TIMEOUT
 
 
 def custom_convert_ldm_vae_checkpoint(checkpoint, config):

@@ -3,7 +3,7 @@ import unittest
 
 import torch
 
-from diffusers import IPNDMScheduler
+from diffusers_udated import IPNDMScheduler
 
 from .test_schedulers import SchedulerCommonTest
 

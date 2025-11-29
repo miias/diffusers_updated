@@ -9,7 +9,7 @@ from torch.nn import functional as F
 from torchvision import transforms
 from transformers import CLIPImageProcessor, CLIPModel, CLIPTextModel, CLIPTokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -17,10 +17,10 @@ from diffusers import (
     PNDMScheduler,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.utils import PIL_INTERPOLATION, deprecate
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers_udated.pipelines.pipeline_utils import DiffusionPipeline, StableDiffusionMixin
+from diffusers_udated.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_udated.utils import PIL_INTERPOLATION, deprecate
+from diffusers_udated.utils.torch_utils import randn_tensor
 
 
 EXAMPLE_DOC_STRING = """

@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from transformers import Qwen2_5_VLConfig, Qwen2_5_VLForConditionalGeneration, Qwen2Tokenizer
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKLQwenImage,
     FlowMatchEulerDiscreteScheduler,
     QwenImageImg2ImgPipeline,

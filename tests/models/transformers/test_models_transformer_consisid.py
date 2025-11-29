@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers import ConsisIDTransformer3DModel
+from diffusers_udated import ConsisIDTransformer3DModel
 
 from ...testing_utils import (
     enable_full_determinism,

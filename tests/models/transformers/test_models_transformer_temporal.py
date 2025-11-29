@@ -17,7 +17,7 @@ import unittest
 
 import torch
 
-from diffusers.models.transformers import TransformerTemporalModel
+from diffusers_udated.models.transformers import TransformerTemporalModel
 
 from ...testing_utils import (
     enable_full_determinism,

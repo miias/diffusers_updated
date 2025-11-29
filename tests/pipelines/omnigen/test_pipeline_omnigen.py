@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer
 
-from diffusers import AutoencoderKL, FlowMatchEulerDiscreteScheduler, OmniGenPipeline, OmniGenTransformer2DModel
+from diffusers_udated import AutoencoderKL, FlowMatchEulerDiscreteScheduler, OmniGenPipeline, OmniGenTransformer2DModel
 
 from ...testing_utils import (
     Expectations,

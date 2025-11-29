@@ -30,7 +30,7 @@ from transformers import (
     CLIPVisionModelWithProjection,
 )
 
-from diffusers import (
+from diffusers_udated import (
     AutoencoderKL,
     AutoPipelineForImage2Image,
     EulerDiscreteScheduler,

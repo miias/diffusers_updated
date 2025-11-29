@@ -16,7 +16,7 @@ import unittest
 
 import torch
 
-from diffusers import CosmosTransformer3DModel
+from diffusers_udated import CosmosTransformer3DModel
 
 from ...testing_utils import enable_full_determinism, torch_device
 from ..test_modeling_common import ModelTesterMixin

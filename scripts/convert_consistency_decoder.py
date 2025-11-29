@@ -11,10 +11,10 @@ from huggingface_hub.utils import insecure_hashlib
 from safetensors.torch import load_file as stl
 from tqdm import tqdm
 
-from diffusers import AutoencoderKL, ConsistencyDecoderVAE, DiffusionPipeline, StableDiffusionPipeline, UNet2DModel
-from diffusers.models.autoencoders.vae import Encoder
-from diffusers.models.embeddings import TimestepEmbedding
-from diffusers.models.unets.unet_2d_blocks import ResnetDownsampleBlock2D, ResnetUpsampleBlock2D, UNetMidBlock2D
+from diffusers_udated import AutoencoderKL, ConsistencyDecoderVAE, DiffusionPipeline, StableDiffusionPipeline, UNet2DModel
+from diffusers_udated.models.autoencoders.vae import Encoder
+from diffusers_udated.models.embeddings import TimestepEmbedding
+from diffusers_udated.models.unets.unet_2d_blocks import ResnetDownsampleBlock2D, ResnetUpsampleBlock2D, UNetMidBlock2D
 
 
 args = ArgumentParser()
@@ -161,7 +161,7 @@ class ConsistencyDecoder:
 
             import torch.nn.functional as F
 
-            from diffusers import UNet2DModel
+            from diffusers_udated import UNet2DModel
 
             if isinstance(self.ckpt, UNet2DModel):
                 input = torch.concat([c_in * x_start, F.upsample_nearest(features, scale_factor=8)], dim=1)
